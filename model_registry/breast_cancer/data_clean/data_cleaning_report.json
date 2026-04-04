@@ -1,0 +1,185 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:37:47.704043Z",
+    "pipeline_name": "breast_cancer_data_cleaning",
+    "status": "success",
+    "input_shape": {
+        "rows": 569,
+        "columns": 33
+    },
+    "output_shape": {
+        "rows": 569,
+        "columns": 31
+    },
+    "target_column": "target",
+    "steps_summary": {
+        "dataset_name": "breast_cancer",
+        "pipeline_name": "breast_cancer_data_cleaning",
+        "generated_at": "2026-04-03T14:37:47.627983Z",
+        "raw_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\raw\\breast_cancer.csv",
+        "processed_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\processed\\breast_cancer_clean.csv",
+        "schema_validation": {
+            "missing_columns": [],
+            "extra_columns": [
+                "unnamed:_32"
+            ]
+        },
+        "missing_markers_standardized": true,
+        "dropped_columns": [
+            "id",
+            "unnamed:_32"
+        ],
+        "duplicates_removed": 0,
+        "missing_values_before": {},
+        "missing_value_imputation": {},
+        "missing_values_after": 0,
+        "dtype_enforcement": {
+            "radius_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "texture_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "perimeter_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "area_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "smoothness_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "compactness_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "concavity_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "concave_points_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "symmetry_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "fractal_dimension_mean": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "radius_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "texture_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "perimeter_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "area_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "smoothness_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "compactness_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "concavity_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "concave_points_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "symmetry_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "fractal_dimension_se": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "radius_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "texture_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "perimeter_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "area_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "smoothness_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "compactness_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "concavity_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "concave_points_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "symmetry_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "fractal_dimension_worst": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "target": {
+                "before": "int64",
+                "after": "int64"
+            }
+        },
+        "invalid_value_corrections": {},
+        "total_invalid_values_replaced": 0,
+        "final_validation": {
+            "null_values_remaining": 0,
+            "target_values": [
+                0,
+                1
+            ],
+            "feature_count": 30,
+            "all_features_numeric": true,
+            "negative_feature_value_count": 0,
+            "final_shape": {
+                "rows": 569,
+                "columns": 31
+            }
+        }
+    },
+    "artifacts": {
+        "cleaned_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\processed\\breast_cancer_clean.csv",
+        "schema_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\data_clean\\schema.json",
+        "feature_info_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\data_clean\\feature_info.json",
+        "data_cleaning_report_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\data_clean\\data_cleaning_report.json"
+    }
+}

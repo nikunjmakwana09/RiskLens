@@ -1,0 +1,38 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:38:27.856412Z",
+    "input_dataset_shape": {
+        "rows": 569,
+        "features": 35
+    },
+    "split_summary": {
+        "train_shape": {
+            "rows": 397,
+            "features": 35
+        },
+        "validation_shape": {
+            "rows": 86,
+            "features": 35
+        },
+        "test_shape": {
+            "rows": 86,
+            "features": 35
+        }
+    },
+    "target_distribution": {
+        "0": 357,
+        "1": 212
+    },
+    "best_cv_model": {
+        "model": "ExtraTrees",
+        "cv_roc_auc_mean": 0.9886200328407225,
+        "cv_roc_auc_std": 0.011015317314944763,
+        "cv_pr_auc_mean": 0.9842707659073533,
+        "cv_f1_mean": 0.9358954958736261,
+        "cv_recall_mean": 0.9257471264367816,
+        "cv_balanced_accuracy_mean": 0.9487919305653296,
+        "composite_score": 0.9637915258724989
+    },
+    "final_selected_model": "ExtraTrees",
+    "decision_threshold": 0.19999999999999996
+}

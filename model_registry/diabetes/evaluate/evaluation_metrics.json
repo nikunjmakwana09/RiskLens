@@ -1,0 +1,205 @@
+{
+    "dataset_name": "diabetes",
+    "evaluation_generated_at": "2026-04-03T16:50:31.092692Z",
+    "saved_training_threshold": 0.3,
+    "analysis_best_threshold": 0.37,
+    "final_used_threshold": 0.3,
+    "metrics": {
+        "threshold": 0.3,
+        "accuracy": 0.7142857142857143,
+        "precision": 0.5543478260869565,
+        "recall": 0.9444444444444444,
+        "specificity": 0.59,
+        "f1_score": 0.6986301369863014,
+        "balanced_accuracy": 0.7672222222222222,
+        "roc_auc": 0.8375925925925927,
+        "pr_auc": 0.6986628161992626,
+        "brier_score": 0.16106824132331618,
+        "prevalence": 0.35064935064935066,
+        "positive_prediction_rate": 0.5974025974025974
+    },
+    "classification_report_file": "classification_report.json",
+    "threshold_analysis_file": "threshold_analysis.csv",
+    "error_analysis_file": "error_analysis.json",
+    "plots": {
+        "confusion_matrix": "confusion_matrix.png",
+        "roc_curve": "roc_curve.png",
+        "precision_recall_curve": "precision_recall_curve.png",
+        "calibration_curve": "calibration_curve.png"
+    },
+    "confusion_matrix": {
+        "true_negative": 59,
+        "false_positive": 41,
+        "false_negative": 3,
+        "true_positive": 51
+    },
+    "roc_summary": {
+        "roc_auc": 0.8375925925925927,
+        "curve_points": 56
+    },
+    "pr_summary": {
+        "pr_auc": 0.6986628161992626,
+        "baseline_positive_rate": 0.35064935064935066,
+        "curve_points": 155
+    },
+    "calibration_summary": {
+        "bins_used": 10,
+        "mean_absolute_calibration_error": 0.12057428179298628,
+        "prob_true": [
+            0.030303030303030304,
+            0.0,
+            0.14285714285714285,
+            0.2,
+            0.5333333333333333,
+            0.47058823529411764,
+            0.5,
+            0.7368421052631579,
+            0.5,
+            0.8181818181818182
+        ],
+        "prob_pred": [
+            0.050475713834141164,
+            0.14448716107705334,
+            0.25139128789164655,
+            0.3468861229612711,
+            0.43646845066633483,
+            0.55957765295288,
+            0.6605339152702929,
+            0.7406275966252615,
+            0.8343113226507916,
+            0.9193594938987935
+        ]
+    },
+    "top_threshold_rows": [
+        {
+            "threshold": 0.1,
+            "accuracy": 0.551948051948052,
+            "precision": 0.4380165289256198,
+            "recall": 0.9814814814814815,
+            "specificity": 0.32,
+            "f1_score": 0.6057142857142858,
+            "balanced_accuracy": 0.6507407407407407,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7857142857142857
+        },
+        {
+            "threshold": 0.11,
+            "accuracy": 0.5584415584415584,
+            "precision": 0.44166666666666665,
+            "recall": 0.9814814814814815,
+            "specificity": 0.33,
+            "f1_score": 0.6091954022988506,
+            "balanced_accuracy": 0.6557407407407407,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7792207792207793
+        },
+        {
+            "threshold": 0.12,
+            "accuracy": 0.5714285714285714,
+            "precision": 0.4491525423728814,
+            "recall": 0.9814814814814815,
+            "specificity": 0.35,
+            "f1_score": 0.6162790697674418,
+            "balanced_accuracy": 0.6657407407407407,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7662337662337663
+        },
+        {
+            "threshold": 0.13,
+            "accuracy": 0.5974025974025974,
+            "precision": 0.4649122807017544,
+            "recall": 0.9814814814814815,
+            "specificity": 0.39,
+            "f1_score": 0.6309523809523809,
+            "balanced_accuracy": 0.6857407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7402597402597403
+        },
+        {
+            "threshold": 0.14,
+            "accuracy": 0.6038961038961039,
+            "precision": 0.4690265486725664,
+            "recall": 0.9814814814814815,
+            "specificity": 0.4,
+            "f1_score": 0.6347305389221557,
+            "balanced_accuracy": 0.6907407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7337662337662337
+        },
+        {
+            "threshold": 0.15,
+            "accuracy": 0.6103896103896104,
+            "precision": 0.4732142857142857,
+            "recall": 0.9814814814814815,
+            "specificity": 0.41,
+            "f1_score": 0.6385542168674698,
+            "balanced_accuracy": 0.6957407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7272727272727273
+        },
+        {
+            "threshold": 0.16,
+            "accuracy": 0.6233766233766234,
+            "precision": 0.4818181818181818,
+            "recall": 0.9814814814814815,
+            "specificity": 0.43,
+            "f1_score": 0.6463414634146342,
+            "balanced_accuracy": 0.7057407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7142857142857143
+        },
+        {
+            "threshold": 0.17,
+            "accuracy": 0.6233766233766234,
+            "precision": 0.4818181818181818,
+            "recall": 0.9814814814814815,
+            "specificity": 0.43,
+            "f1_score": 0.6463414634146342,
+            "balanced_accuracy": 0.7057407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7142857142857143
+        },
+        {
+            "threshold": 0.18,
+            "accuracy": 0.6298701298701299,
+            "precision": 0.48623853211009177,
+            "recall": 0.9814814814814815,
+            "specificity": 0.44,
+            "f1_score": 0.6503067484662577,
+            "balanced_accuracy": 0.7107407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7077922077922078
+        },
+        {
+            "threshold": 0.19,
+            "accuracy": 0.6363636363636364,
+            "precision": 0.49074074074074076,
+            "recall": 0.9814814814814815,
+            "specificity": 0.45,
+            "f1_score": 0.654320987654321,
+            "balanced_accuracy": 0.7157407407407408,
+            "roc_auc": 0.8375925925925927,
+            "pr_auc": 0.6986628161992626,
+            "brier_score": 0.16106824132331618,
+            "positive_prediction_rate": 0.7012987012987013
+        }
+    ]
+}

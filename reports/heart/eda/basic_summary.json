@@ -1,0 +1,86 @@
+{
+    "dataset_name": "heart",
+    "generated_at": "2026-04-03T14:54:23.178004Z",
+    "shape": {
+        "rows": 302,
+        "columns": 14
+    },
+    "target_column": "target",
+    "feature_count": 13,
+    "numeric_feature_count": 13,
+    "categorical_feature_count": 8,
+    "core_numerical_features": [
+        "age",
+        "trestbps",
+        "chol",
+        "thalach",
+        "oldpeak"
+    ],
+    "categorical_features": [
+        "sex",
+        "cp",
+        "fbs",
+        "restecg",
+        "exang",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "all_numeric_features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "target_distribution": {
+        "0": 138,
+        "1": 164
+    },
+    "target_rate_percent": {
+        "0": 45.6954,
+        "1": 54.3046
+    },
+    "class_balance_status": "reasonably_balanced",
+    "missing_values": {
+        "age": 0,
+        "sex": 0,
+        "cp": 0,
+        "trestbps": 0,
+        "chol": 0,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 0,
+        "exang": 0,
+        "oldpeak": 0,
+        "slope": 0,
+        "ca": 0,
+        "thal": 0,
+        "target": 0
+    },
+    "data_types": {
+        "age": "float64",
+        "sex": "int64",
+        "cp": "int64",
+        "trestbps": "float64",
+        "chol": "float64",
+        "fbs": "int64",
+        "restecg": "int64",
+        "thalach": "float64",
+        "exang": "int64",
+        "oldpeak": "float64",
+        "slope": "int64",
+        "ca": "int64",
+        "thal": "int64",
+        "target": "int64"
+    },
+    "duplicate_rows": 0
+}

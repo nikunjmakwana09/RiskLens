@@ -1,0 +1,30 @@
+{
+    "dataset_name": "heart",
+    "target_column": "target",
+    "selected_features": [
+        "oldpeak",
+        "age_thalach_ratio",
+        "oldpeak_thalach_ratio",
+        "age",
+        "trestbps",
+        "thalach",
+        "chol_age_ratio",
+        "bp_age_ratio",
+        "sex_0",
+        "sex_1",
+        "cp_0",
+        "cp_1",
+        "cp_2",
+        "exang_0",
+        "exang_1",
+        "slope_1",
+        "slope_2",
+        "ca_0",
+        "ca_1",
+        "ca_2",
+        "ca_3",
+        "thal_2",
+        "thal_3"
+    ],
+    "selected_feature_count": 23
+}

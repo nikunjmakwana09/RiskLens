@@ -1,0 +1,54 @@
+{
+    "dataset_name": "heart",
+    "generated_at": "2026-04-03T14:54:54.559864Z",
+    "model_name": "CalibratedLogisticRegression",
+    "task_type": "binary_classification",
+    "target_column": "target",
+    "prediction_output": "probability_of_heart_disease",
+    "selected_features_count": 23,
+    "selected_features": [
+        "oldpeak",
+        "age_thalach_ratio",
+        "oldpeak_thalach_ratio",
+        "age",
+        "trestbps",
+        "thalach",
+        "chol_age_ratio",
+        "bp_age_ratio",
+        "sex_0",
+        "sex_1",
+        "cp_0",
+        "cp_1",
+        "cp_2",
+        "exang_0",
+        "exang_1",
+        "slope_1",
+        "slope_2",
+        "ca_0",
+        "ca_1",
+        "ca_2",
+        "ca_3",
+        "thal_2",
+        "thal_3"
+    ],
+    "base_model": "LogisticRegression",
+    "calibration": {
+        "enabled": true,
+        "method": "sigmoid",
+        "cv": 5
+    },
+    "thresholding": {
+        "enabled": true,
+        "selection_strategy": "validation-set recall-aware threshold tuning"
+    },
+    "performance_snapshot": {
+        "train_f1": 0.86,
+        "validation_f1": 0.8,
+        "test_f1": 0.8372093023255814,
+        "train_roc_auc": 0.9481907894736843,
+        "validation_roc_auc": 0.9066666666666666,
+        "test_roc_auc": 0.8819047619047619,
+        "test_pr_auc": 0.8428437135303615,
+        "test_brier_score": 0.13558579845215518
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "dataset_name": "heart",
+    "model_name": "CalibratedLogisticRegression",
+    "evaluated_at_utc": "2026-04-03T14:55:17.522390Z",
+    "saved_training_threshold": 0.38,
+    "analysis_best_threshold": 0.1,
+    "final_threshold_used": 0.38,
+    "test_samples": 61,
+    "metrics": {
+        "threshold": 0.38,
+        "accuracy": 0.11475409836065574,
+        "precision": 0.18181818181818182,
+        "recall": 0.18181818181818182,
+        "f1_score": 0.18181818181818182,
+        "roc_auc": 0.06818181818181818,
+        "pr_auc": 0.35692528731860196,
+        "specificity": 0.03571428571428571,
+        "balanced_accuracy": 0.10876623376623376,
+        "brier_score": 0.6965373870168586,
+        "prevalence": 0.5409836065573771,
+        "positive_prediction_rate": 0.5409836065573771
+    },
+    "source_artifacts": {
+        "model_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\train\\model.pkl",
+        "preprocessor_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\train\\preprocessor.pkl",
+        "selected_features_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\train\\selected_features.json",
+        "threshold_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\train\\threshold.json"
+    }
+}

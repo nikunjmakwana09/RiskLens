@@ -1,0 +1,39 @@
+{
+    "dataset_name": "diabetes",
+    "generated_at": "2026-04-03T14:51:34.319585Z",
+    "input_dataset_shape": {
+        "rows": 768,
+        "features": 20
+    },
+    "split_summary": {
+        "train_shape": {
+            "rows": 536,
+            "features": 20
+        },
+        "validation_shape": {
+            "rows": 116,
+            "features": 20
+        },
+        "test_shape": {
+            "rows": 116,
+            "features": 20
+        }
+    },
+    "target_distribution": {
+        "0": 500,
+        "1": 268
+    },
+    "best_cv_model": {
+        "model": "ExtraTrees",
+        "cv_accuracy_mean": 0.761128418137764,
+        "cv_precision_mean": 0.6335529205094422,
+        "cv_recall_mean": 0.7536273115220483,
+        "cv_f1_mean": 0.6876483080507346,
+        "cv_roc_auc_mean": 0.8376939116298384,
+        "cv_pr_auc_mean": 0.7191184097856411,
+        "cv_balanced_accuracy_mean": 0.7593395356782084,
+        "composite_score": 0.7566161635513925
+    },
+    "final_selected_model": "ExtraTrees",
+    "decision_threshold": 0.3
+}

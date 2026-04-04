@@ -1,0 +1,157 @@
+{
+    "dataset_name": "diabetes",
+    "target_column": "Outcome",
+    "task_type": "binary_classification",
+    "row_count": 768,
+    "column_count": 9,
+    "feature_count": 8,
+    "feature_columns": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+    ],
+    "numeric_features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+    ],
+    "categorical_features": [],
+    "columns": [
+        {
+            "name": "Pregnancies",
+            "dtype": "int64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 17,
+            "statistics": {
+                "min": 0,
+                "max": 17,
+                "mean": 3.8450520833333335,
+                "median": 3.0,
+                "std": 3.3695780626988694
+            }
+        },
+        {
+            "name": "Glucose",
+            "dtype": "int64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 135,
+            "statistics": {
+                "min": 44,
+                "max": 199,
+                "mean": 121.65625,
+                "median": 117.0,
+                "std": 30.43828582241517
+            }
+        },
+        {
+            "name": "BloodPressure",
+            "dtype": "int64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 46,
+            "statistics": {
+                "min": 24,
+                "max": 122,
+                "mean": 72.38671875,
+                "median": 72.0,
+                "std": 12.096641733978139
+            }
+        },
+        {
+            "name": "SkinThickness",
+            "dtype": "int64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 50,
+            "statistics": {
+                "min": 7,
+                "max": 99,
+                "mean": 29.108072916666668,
+                "median": 29.0,
+                "std": 8.791221023089706
+            }
+        },
+        {
+            "name": "Insulin",
+            "dtype": "int64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 185,
+            "statistics": {
+                "min": 14,
+                "max": 846,
+                "mean": 140.671875,
+                "median": 125.0,
+                "std": 86.383059693181
+            }
+        },
+        {
+            "name": "BMI",
+            "dtype": "float64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 247,
+            "statistics": {
+                "min": 18.2,
+                "max": 67.1,
+                "mean": 32.45520833333333,
+                "median": 32.3,
+                "std": 6.875176818080995
+            }
+        },
+        {
+            "name": "DiabetesPedigreeFunction",
+            "dtype": "float64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 517,
+            "statistics": {
+                "min": 0.078,
+                "max": 2.42,
+                "mean": 0.47187630208333325,
+                "median": 0.3725,
+                "std": 0.3313285950127749
+            }
+        },
+        {
+            "name": "Age",
+            "dtype": "int64",
+            "role": "feature",
+            "nullable": false,
+            "unique_values": 52,
+            "statistics": {
+                "min": 21,
+                "max": 81,
+                "mean": 33.240885416666664,
+                "median": 29.0,
+                "std": 11.760231540678685
+            }
+        },
+        {
+            "name": "Outcome",
+            "dtype": "int64",
+            "role": "target",
+            "nullable": false,
+            "unique_values": 2,
+            "statistics": {
+                "min": 0,
+                "max": 1,
+                "mean": 0.3489583333333333,
+                "median": 0.0,
+                "std": 0.47695137724279896
+            }
+        }
+    ]
+}

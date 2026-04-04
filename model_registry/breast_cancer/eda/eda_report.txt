@@ -1,0 +1,58 @@
+BREAST CANCER - EXPLORATORY DATA ANALYSIS INSIGHT REPORT
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Dataset Name              : breast_cancer
+Generated At              : 2026-04-03T14:37:59.231390Z
+Total Rows                : 569
+Total Columns             : 31
+Feature Count             : 30
+Numeric Features          : 30
+Categorical Features      : 0
+Duplicate Rows            : 0
+Missing Values Total      : 0
+
+2. TARGET DISTRIBUTION
+--------------------------------------------------------------------------------
+Benign (0) Count          : 357
+Malignant (1) Count       : 212
+Benign (0) Rate           : 62.74%
+Malignant (1) Rate        : 37.26%
+Class Balance Status      : reasonably_balanced
+
+3. STRONGEST PREDICTIVE SIGNALS
+--------------------------------------------------------------------------------
+Top 5 Features by Absolute Correlation with Target:
+concave_points_worst, perimeter_worst, concave_points_mean, radius_worst, perimeter_mean
+
+Top 5 Features by Mutual Information:
+perimeter_worst, area_worst, radius_worst, concave_points_mean, concave_points_worst
+
+Top 5 Features by Class-wise Mean Difference:
+area_worst, area_mean, perimeter_worst, area_se, perimeter_mean
+
+4. DISTRIBUTION HEALTH
+--------------------------------------------------------------------------------
+Top 5 Features with Most Outliers:
+area_se, radius_se, perimeter_se, area_worst, smoothness_se
+
+Highly Skewed Features (|skew| > 1):
+area_se, concavity_se, fractal_dimension_se, perimeter_se, radius_se
+
+5. CLINICAL / MODELING INTERPRETATION
+--------------------------------------------------------------------------------
+Features with strong separation between benign and malignant classes are likely to be highly informative.
+Because malignant cases are clinically high-risk, training should prioritize recall, threshold tuning, and calibration.
+Outliers and skewness should be handled carefully during training-time preprocessing rather than modifying the cleaned dataset.
+
+6. TRAINING RECOMMENDATIONS
+--------------------------------------------------------------------------------
+Use stratified splitting for train/validation/test partitions.
+Review multicollinearity before selecting linear models.
+Evaluate probability calibration and operating threshold selection.
+Prefer explainability outputs for the top-ranked predictive features.
+
+7. GOVERNANCE NOTE
+--------------------------------------------------------------------------------
+This EDA report is generated for project auditability, model registry traceability, and downstream training alignment.

@@ -1,0 +1,20 @@
+{
+    "selected_threshold": 0.38,
+    "selection_strategy": "validation_recall_f1_specificity_balanced_optimization",
+    "search_range": {
+        "start": 0.15,
+        "end": 0.85,
+        "step": 0.01
+    },
+    "selected_metrics": {
+        "accuracy": 0.8043478260869565,
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "specificity": 0.76,
+        "f1_score": 0.8,
+        "balanced_accuracy": 0.8085714285714285,
+        "roc_auc": 0.9066666666666666,
+        "pr_auc": 0.9169000117529531,
+        "brier_score": 0.11973200985668313
+    }
+}

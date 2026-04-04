@@ -1,0 +1,394 @@
+{
+    "dataset_name": "diabetes",
+    "generated_at": "2026-04-03T16:58:27.191047Z",
+    "threshold": 0.3,
+    "explained_sample_count": 5,
+    "top_features_per_sample": 10,
+    "samples": [
+        {
+            "sample_index": 484,
+            "predicted_probability": 0.7424789222977677,
+            "predicted_class": 1,
+            "top_feature_contributions": [
+                {
+                    "feature": "Glucose_BMI",
+                    "feature_value": 1.77466020809535,
+                    "shap_value": 0.07100579072400862,
+                    "abs_shap_value": 0.07100579072400862,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "High_Glucose",
+                    "feature_value": 1.7672229409661147,
+                    "shap_value": 0.062315200079946655,
+                    "abs_shap_value": 0.062315200079946655,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Age",
+                    "feature_value": 0.39752316402947097,
+                    "shap_value": 0.041115726950293904,
+                    "abs_shap_value": 0.041115726950293904,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Metabolic_Load",
+                    "feature_value": 0.4097802098483196,
+                    "shap_value": 0.029774205456473083,
+                    "abs_shap_value": 0.029774205456473083,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose",
+                    "feature_value": 0.795958850831754,
+                    "shap_value": 0.027969497635398438,
+                    "abs_shap_value": 0.027969497635398438,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "BMI_Age",
+                    "feature_value": 0.6659010952947201,
+                    "shap_value": 0.023192459267995888,
+                    "abs_shap_value": 0.023192459267995888,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Obese",
+                    "feature_value": 0.7994646526813118,
+                    "shap_value": 0.018315527824234817,
+                    "abs_shap_value": 0.018315527824234817,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Insulin_Product",
+                    "feature_value": 0.3542236232705982,
+                    "shap_value": 0.015458289667007123,
+                    "abs_shap_value": 0.015458289667007123,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "DPF_Age_Interaction",
+                    "feature_value": 0.6505375931075631,
+                    "shap_value": 0.011907531340273397,
+                    "abs_shap_value": 0.011907531340273397,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Age",
+                    "feature_value": -0.07672871269292167,
+                    "shap_value": 0.011189092740659943,
+                    "abs_shap_value": 0.011189092740659943,
+                    "direction": "increase_diabetes_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 304,
+            "predicted_probability": 0.5630716667502794,
+            "predicted_class": 1,
+            "top_feature_contributions": [
+                {
+                    "feature": "High_Glucose",
+                    "feature_value": 1.7672229409661147,
+                    "shap_value": 0.1249269376726526,
+                    "abs_shap_value": 0.1249269376726526,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Age",
+                    "feature_value": 0.8573696212635834,
+                    "shap_value": 0.0587050721791193,
+                    "abs_shap_value": 0.0587050721791193,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "BMI",
+                    "feature_value": -1.6818060365490353,
+                    "shap_value": -0.0459054046894152,
+                    "abs_shap_value": 0.0459054046894152,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Obese",
+                    "feature_value": -1.250837040319564,
+                    "shap_value": -0.042667996590289324,
+                    "abs_shap_value": 0.042667996590289324,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose",
+                    "feature_value": 0.9655137129435972,
+                    "shap_value": 0.03273690511760373,
+                    "abs_shap_value": 0.03273690511760373,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_BMI",
+                    "feature_value": -0.5807699203195958,
+                    "shap_value": -0.02849448231111807,
+                    "abs_shap_value": 0.02849448231111807,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Age",
+                    "feature_value": 0.46870714817482434,
+                    "shap_value": 0.02093304944604532,
+                    "abs_shap_value": 0.02093304944604532,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Insulin_Product",
+                    "feature_value": 0.40673493105004543,
+                    "shap_value": 0.016548617237474,
+                    "abs_shap_value": 0.016548617237474,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Metabolic_Load",
+                    "feature_value": 0.20284572533275544,
+                    "shap_value": 0.01408700961181154,
+                    "abs_shap_value": 0.01408700961181154,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "DPF_Age_Interaction",
+                    "feature_value": -0.6486364269663157,
+                    "shap_value": -0.007192152963197836,
+                    "abs_shap_value": 0.007192152963197836,
+                    "direction": "decrease_diabetes_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 570,
+            "predicted_probability": 0.17618725129148066,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "Glucose",
+                    "feature_value": -1.4760763014669467,
+                    "shap_value": -0.07382601429100999,
+                    "abs_shap_value": 0.07382601429100999,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_BMI",
+                    "feature_value": -1.0252588828771876,
+                    "shap_value": -0.07250473345731356,
+                    "abs_shap_value": 0.07250473345731356,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Metabolic_Load",
+                    "feature_value": -0.588885854175071,
+                    "shap_value": -0.040660634774369146,
+                    "abs_shap_value": 0.040660634774369146,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Insulin_Product",
+                    "feature_value": -0.6061335063160653,
+                    "shap_value": -0.037237890559331445,
+                    "abs_shap_value": 0.037237890559331445,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "High_Glucose",
+                    "feature_value": -0.5658595623783125,
+                    "shap_value": -0.030254336645447064,
+                    "abs_shap_value": 0.030254336645447064,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "BMI_Age",
+                    "feature_value": 0.42859495843510703,
+                    "shap_value": 0.024751680992416508,
+                    "abs_shap_value": 0.024751680992416508,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Age",
+                    "feature_value": -0.4540278318429666,
+                    "shap_value": -0.015880929025597013,
+                    "abs_shap_value": 0.015880929025597013,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "DPF_Age_Interaction",
+                    "feature_value": -0.21769970320558135,
+                    "shap_value": -0.014813792265217356,
+                    "abs_shap_value": 0.014813792265217356,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Age",
+                    "feature_value": 0.631507033850621,
+                    "shap_value": 0.014729219805000337,
+                    "abs_shap_value": 0.014729219805000337,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "BMI",
+                    "feature_value": 0.04002903400559314,
+                    "shap_value": 0.005416639502203412,
+                    "abs_shap_value": 0.005416639502203412,
+                    "direction": "increase_diabetes_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 629,
+            "predicted_probability": 0.019571825431580946,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "Glucose_Age",
+                    "feature_value": -1.3970534227166755,
+                    "shap_value": -0.06606566248459192,
+                    "abs_shap_value": 0.06606566248459192,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_BMI",
+                    "feature_value": -1.179348389897153,
+                    "shap_value": -0.06279420596639189,
+                    "abs_shap_value": 0.06279420596639189,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "BMI_Age",
+                    "feature_value": -1.301637128034982,
+                    "shap_value": -0.056401147958377244,
+                    "abs_shap_value": 0.056401147958377244,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "High_Glucose",
+                    "feature_value": -0.5658595623783125,
+                    "shap_value": -0.03623308620097384,
+                    "abs_shap_value": 0.03623308620097384,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "DPF_Age_Interaction",
+                    "feature_value": -1.770794902147435,
+                    "shap_value": -0.0360738310543775,
+                    "abs_shap_value": 0.0360738310543775,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Age",
+                    "feature_value": -1.2659689722800862,
+                    "shap_value": -0.030877292151287067,
+                    "abs_shap_value": 0.030877292151287067,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Obese",
+                    "feature_value": -1.250837040319564,
+                    "shap_value": -0.026540278568823322,
+                    "abs_shap_value": 0.026540278568823322,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "BMI",
+                    "feature_value": -1.1278243181966767,
+                    "shap_value": -0.023763221021867245,
+                    "abs_shap_value": 0.023763221021867245,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose",
+                    "feature_value": -0.933500742709048,
+                    "shap_value": -0.0220314231984791,
+                    "abs_shap_value": 0.0220314231984791,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Metabolic_Load",
+                    "feature_value": -0.47050233325581176,
+                    "shap_value": -0.015085807302448136,
+                    "abs_shap_value": 0.015085807302448136,
+                    "direction": "decrease_diabetes_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 756,
+            "predicted_probability": 0.657971616055264,
+            "predicted_class": 1,
+            "top_feature_contributions": [
+                {
+                    "feature": "Glucose_Age",
+                    "feature_value": 0.7744631832784649,
+                    "shap_value": 0.061021170396124,
+                    "abs_shap_value": 0.061021170396124,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Obese",
+                    "feature_value": 0.7994646526813118,
+                    "shap_value": 0.026102157599753397,
+                    "abs_shap_value": 0.026102157599753397,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Metabolic_Load",
+                    "feature_value": 0.1793417022071935,
+                    "shap_value": 0.024740341069592855,
+                    "abs_shap_value": 0.024740341069592855,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "BMI_Age",
+                    "feature_value": 0.3835368311832818,
+                    "shap_value": 0.023625673175034667,
+                    "abs_shap_value": 0.023625673175034667,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose",
+                    "feature_value": 0.5246710714528047,
+                    "shap_value": 0.023295738924149677,
+                    "abs_shap_value": 0.023295738924149677,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_BMI",
+                    "feature_value": 0.3110989899179136,
+                    "shap_value": 0.022502590991135288,
+                    "abs_shap_value": 0.022502590991135288,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "Age",
+                    "feature_value": 0.631507033850621,
+                    "shap_value": 0.021525040170297195,
+                    "abs_shap_value": 0.021525040170297195,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "High_Glucose",
+                    "feature_value": -0.5658595623783125,
+                    "shap_value": -0.02117657075100102,
+                    "abs_shap_value": 0.02117657075100102,
+                    "direction": "decrease_diabetes_risk"
+                },
+                {
+                    "feature": "Glucose_Insulin_Product",
+                    "feature_value": 0.26631740773074336,
+                    "shap_value": 0.01978065348786541,
+                    "abs_shap_value": 0.01978065348786541,
+                    "direction": "increase_diabetes_risk"
+                },
+                {
+                    "feature": "DPF_Age_Interaction",
+                    "feature_value": 0.2986046748121248,
+                    "shap_value": 0.01336705877703127,
+                    "abs_shap_value": 0.01336705877703127,
+                    "direction": "increase_diabetes_risk"
+                }
+            ]
+        }
+    ]
+}

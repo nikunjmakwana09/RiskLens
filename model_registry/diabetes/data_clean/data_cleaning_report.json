@@ -1,0 +1,128 @@
+{
+    "dataset_name": "diabetes",
+    "target_column": "Outcome",
+    "raw_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\raw\\diabetes.csv",
+    "processed_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\processed\\diabetes_clean.csv",
+    "pipeline_started_at": "2026-04-03T14:46:11.735735Z",
+    "pipeline_completed_at": "2026-04-03T14:46:11.782492Z",
+    "initial_shape": [
+        768,
+        9
+    ],
+    "final_shape": [
+        768,
+        9
+    ],
+    "schema_validation": {
+        "missing_columns": [],
+        "extra_columns": []
+    },
+    "rows_removed_duplicates": 0,
+    "missing_markers_standardized": true,
+    "missing_values_before": 0,
+    "missing_values_after": 0,
+    "invalid_zero_replacements": {
+        "Glucose": {
+            "replaced_count": 5,
+            "replacement_strategy": "non_zero_median",
+            "median_used": 117.0
+        },
+        "BloodPressure": {
+            "replaced_count": 35,
+            "replacement_strategy": "non_zero_median",
+            "median_used": 72.0
+        },
+        "SkinThickness": {
+            "replaced_count": 227,
+            "replacement_strategy": "non_zero_median",
+            "median_used": 29.0
+        },
+        "Insulin": {
+            "replaced_count": 374,
+            "replacement_strategy": "non_zero_median",
+            "median_used": 125.0
+        },
+        "BMI": {
+            "replaced_count": 11,
+            "replacement_strategy": "non_zero_median",
+            "median_used": 32.3
+        }
+    },
+    "invalid_zero_replacements_total": 652,
+    "missing_imputation": {
+        "Pregnancies": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "Glucose": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "BloodPressure": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "SkinThickness": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "Insulin": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "BMI": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "DiabetesPedigreeFunction": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        },
+        "Age": {
+            "strategy": "median",
+            "imputed_count": 0,
+            "fill_value": null
+        }
+    },
+    "target_validation": {
+        "unique_values": [
+            0,
+            1
+        ]
+    },
+    "range_validation_warnings": {
+        "Glucose > 300": 0,
+        "BloodPressure > 200": 0,
+        "SkinThickness > 100": 0,
+        "Insulin > 900": 0,
+        "BMI > 70": 0,
+        "Age > 120": 0
+    },
+    "final_null_count": 0,
+    "dtypes_after_cleaning": {
+        "Pregnancies": "int64",
+        "Glucose": "int64",
+        "BloodPressure": "int64",
+        "SkinThickness": "int64",
+        "Insulin": "int64",
+        "BMI": "float64",
+        "DiabetesPedigreeFunction": "float64",
+        "Age": "int64",
+        "Outcome": "int64"
+    },
+    "final_validation": {
+        "all_expected_columns_present": true,
+        "all_features_numeric": true,
+        "target_binary": true,
+        "row_count": 768,
+        "column_count": 9
+    },
+    "status": "success"
+}

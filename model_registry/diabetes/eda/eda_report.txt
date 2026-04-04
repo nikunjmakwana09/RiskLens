@@ -1,0 +1,58 @@
+DIABETES - EXPLORATORY DATA ANALYSIS INSIGHT REPORT
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Dataset Name              : diabetes
+Generated At              : 2026-04-03T14:46:31.933821Z
+Total Rows                : 768
+Total Columns             : 9
+Feature Count             : 8
+Numeric Features          : 8
+Categorical Features      : 0
+Duplicate Rows            : 0
+Missing Values Total      : 0
+
+2. TARGET DISTRIBUTION
+--------------------------------------------------------------------------------
+Non-Diabetic (0) Count    : 500
+Diabetic (1) Count        : 268
+Non-Diabetic (0) Rate     : 65.10%
+Diabetic (1) Rate         : 34.90%
+Class Balance Status      : moderate_imbalance
+
+3. STRONGEST PREDICTIVE SIGNALS
+--------------------------------------------------------------------------------
+Top 5 Features by Absolute Correlation with Target:
+Glucose, BMI, Age, Pregnancies, SkinThickness
+
+Top 5 Features by Mutual Information:
+Glucose, BMI, Pregnancies, Age, DiabetesPedigreeFunction
+
+Top 5 Features by Class-wise Mean Difference:
+Insulin, Glucose, Age, BMI, BloodPressure
+
+4. DISTRIBUTION HEALTH
+--------------------------------------------------------------------------------
+Top 5 Features with Most Outliers:
+Insulin, SkinThickness, DiabetesPedigreeFunction, BloodPressure, Age
+
+Highly Skewed Features (|skew| > 1):
+Insulin, DiabetesPedigreeFunction, Age
+
+5. CLINICAL / MODELING INTERPRETATION
+--------------------------------------------------------------------------------
+Glucose, BMI, insulin-related patterns, and related metabolic variables are typically central for diabetes discrimination.
+Missed diabetic cases can be clinically costly, so recall, calibration, and threshold tuning should be prioritized.
+Outliers and skewness should be handled during training-time preprocessing rather than changing the cleaned dataset.
+
+6. TRAINING RECOMMENDATIONS
+--------------------------------------------------------------------------------
+Use stratified splitting for train/validation/test partitions.
+Review multicollinearity and strong signal features before feature selection.
+Evaluate ROC-AUC, PR-AUC, recall, specificity, calibration, and threshold sensitivity.
+Consider robust preprocessing for skewed and outlier-prone variables.
+
+7. GOVERNANCE NOTE
+--------------------------------------------------------------------------------
+This EDA report is generated for project auditability, model registry traceability, and downstream training alignment.

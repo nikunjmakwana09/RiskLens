@@ -1,0 +1,26 @@
+{
+    "dataset_name": "breast_cancer",
+    "selected_features": [
+        "area_mean",
+        "compactness_mean",
+        "concavity_mean",
+        "concave_points_mean",
+        "radius_se",
+        "perimeter_se",
+        "area_se",
+        "radius_worst",
+        "perimeter_worst",
+        "area_worst",
+        "compactness_worst",
+        "concavity_worst",
+        "radius_worst_to_mean",
+        "area_worst_to_mean",
+        "compactness_concavity_interaction",
+        "radius_mean",
+        "perimeter_mean",
+        "concave_points_worst",
+        "radius_perimeter_ratio_mean",
+        "area_radius_ratio_mean"
+    ],
+    "selected_feature_count": 20
+}

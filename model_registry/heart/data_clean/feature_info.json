@@ -1,0 +1,178 @@
+{
+    "dataset_name": "heart",
+    "target_column": "target",
+    "features": [
+        {
+            "name": "age",
+            "feature_type": "numeric",
+            "dtype": "float64",
+            "missing_count": 0,
+            "unique_values": 41,
+            "summary_statistics": {
+                "min": 29.0,
+                "max": 77.0,
+                "mean": 54.420529801324506,
+                "median": 55.5,
+                "std": 9.047969746247457,
+                "skewness": -0.20374327959596905
+            }
+        },
+        {
+            "name": "sex",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 2,
+            "categories": [
+                0,
+                1
+            ]
+        },
+        {
+            "name": "cp",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 4,
+            "categories": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "name": "trestbps",
+            "feature_type": "numeric",
+            "dtype": "float64",
+            "missing_count": 0,
+            "unique_values": 49,
+            "summary_statistics": {
+                "min": 94.0,
+                "max": 200.0,
+                "mean": 131.60264900662253,
+                "median": 130.0,
+                "std": 17.56339423003756,
+                "skewness": 0.7165414326647316
+            }
+        },
+        {
+            "name": "chol",
+            "feature_type": "numeric",
+            "dtype": "float64",
+            "missing_count": 0,
+            "unique_values": 152,
+            "summary_statistics": {
+                "min": 126.0,
+                "max": 564.0,
+                "mean": 246.5,
+                "median": 240.5,
+                "std": 51.75348865574056,
+                "skewness": 1.147332413980798
+            }
+        },
+        {
+            "name": "fbs",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 2,
+            "categories": [
+                0,
+                1
+            ]
+        },
+        {
+            "name": "restecg",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 3,
+            "categories": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "name": "thalach",
+            "feature_type": "numeric",
+            "dtype": "float64",
+            "missing_count": 0,
+            "unique_values": 91,
+            "summary_statistics": {
+                "min": 71.0,
+                "max": 202.0,
+                "mean": 149.56953642384107,
+                "median": 152.5,
+                "std": 22.903527251969845,
+                "skewness": -0.5326712468229613
+            }
+        },
+        {
+            "name": "exang",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 2,
+            "categories": [
+                0,
+                1
+            ]
+        },
+        {
+            "name": "oldpeak",
+            "feature_type": "numeric",
+            "dtype": "float64",
+            "missing_count": 0,
+            "unique_values": 40,
+            "summary_statistics": {
+                "min": 0.0,
+                "max": 6.2,
+                "mean": 1.0430463576158941,
+                "median": 0.8,
+                "std": 1.1614522890634562,
+                "skewness": 1.266172720910219
+            }
+        },
+        {
+            "name": "slope",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 3,
+            "categories": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "name": "ca",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 5,
+            "categories": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "name": "thal",
+            "feature_type": "categorical",
+            "dtype": "Int64",
+            "missing_count": 0,
+            "unique_values": 4,
+            "categories": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ]
+}

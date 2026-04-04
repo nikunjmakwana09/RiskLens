@@ -1,0 +1,302 @@
+{
+    "dataset_name": "heart",
+    "analysis_type": "feature_importance",
+    "method": {
+        "primary": "permutation_importance",
+        "secondary": "extra_trees_impurity_importance",
+        "scoring_metric": "roc_auc",
+        "n_repeats": 20
+    },
+    "generated_at": "2026-04-03T14:55:44.194516Z",
+    "target_column": "target",
+    "model_name": "CalibratedLogisticRegression",
+    "selected_feature_count": 23,
+    "feature_count": 23,
+    "top_n_plot_features": 15,
+    "ranking_method": "average_rank_of_impurity_and_permutation_importance",
+    "summary": {
+        "top_5_features_by_average_rank": [
+            "oldpeak",
+            "exang_1",
+            "chol_age_ratio",
+            "exang_0",
+            "slope_2"
+        ],
+        "negative_or_unstable_permutation_features": [
+            "slope_2",
+            "thal_3",
+            "thal_2",
+            "cp_1",
+            "slope_1",
+            "thalach",
+            "sex_0",
+            "age_thalach_ratio",
+            "ca_0",
+            "sex_1",
+            "cp_0",
+            "oldpeak_thalach_ratio",
+            "trestbps",
+            "ca_3"
+        ]
+    },
+    "features": [
+        {
+            "feature": "oldpeak",
+            "impurity_importance": 0.05278851455091657,
+            "permutation_importance_mean": 0.0011428571428571434,
+            "permutation_importance_std": 0.00251255351586151,
+            "importance_percent": 8.3333,
+            "impurity_rank": 7,
+            "permutation_rank": 4,
+            "average_rank": 5.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "exang_1",
+            "impurity_importance": 0.03277356640850523,
+            "permutation_importance_mean": 0.000666666666666671,
+            "permutation_importance_std": 0.004437522955132095,
+            "importance_percent": 4.8611,
+            "impurity_rank": 10,
+            "permutation_rank": 5,
+            "average_rank": 7.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "chol_age_ratio",
+            "impurity_importance": 0.016403015996308067,
+            "permutation_importance_mean": 0.0020952380952381,
+            "permutation_importance_std": 0.0017969487870584048,
+            "importance_percent": 15.2778,
+            "impurity_rank": 13,
+            "permutation_rank": 3,
+            "average_rank": 8.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "exang_0",
+            "impurity_importance": 0.035892052795093346,
+            "permutation_importance_mean": 1.3877787807814458e-18,
+            "permutation_importance_std": 0.004780914437337576,
+            "importance_percent": 0.0,
+            "impurity_rank": 9,
+            "permutation_rank": 8,
+            "average_rank": 8.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "slope_2",
+            "impurity_importance": 0.16740004659972982,
+            "permutation_importance_mean": -0.0037142857142857103,
+            "permutation_importance_std": 0.006388055747708195,
+            "importance_percent": 0.0,
+            "impurity_rank": 1,
+            "permutation_rank": 18,
+            "average_rank": 9.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "ca_2",
+            "impurity_importance": 0.008916249997645525,
+            "permutation_importance_mean": 0.005333333333333338,
+            "permutation_importance_std": 0.0043267873110859265,
+            "importance_percent": 38.8889,
+            "impurity_rank": 19,
+            "permutation_rank": 1,
+            "average_rank": 10.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "thal_3",
+            "impurity_importance": 0.09174878443560866,
+            "permutation_importance_mean": -0.003523809523809518,
+            "permutation_importance_std": 0.00660584500337518,
+            "importance_percent": 0.0,
+            "impurity_rank": 4,
+            "permutation_rank": 17,
+            "average_rank": 10.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "thal_2",
+            "impurity_importance": 0.143969621567225,
+            "permutation_importance_mean": -0.0038095238095238056,
+            "permutation_importance_std": 0.00583988941590701,
+            "importance_percent": 0.0,
+            "impurity_rank": 2,
+            "permutation_rank": 19,
+            "average_rank": 10.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "ca_1",
+            "impurity_importance": 0.008911867476511676,
+            "permutation_importance_mean": 0.003428571428571436,
+            "permutation_importance_std": 0.004765712763122593,
+            "importance_percent": 25.0,
+            "impurity_rank": 20,
+            "permutation_rank": 2,
+            "average_rank": 11.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "age",
+            "impurity_importance": 0.012803100922586698,
+            "permutation_importance_mean": 0.0004761904761904773,
+            "permutation_importance_std": 0.0008247860988423244,
+            "importance_percent": 3.4722,
+            "impurity_rank": 16,
+            "permutation_rank": 7,
+            "average_rank": 11.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "cp_1",
+            "impurity_importance": 0.02128012133843151,
+            "permutation_importance_mean": -0.0011428571428571455,
+            "permutation_importance_std": 0.0012634761106115838,
+            "importance_percent": 0.0,
+            "impurity_rank": 11,
+            "permutation_rank": 12,
+            "average_rank": 11.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "slope_1",
+            "impurity_importance": 0.14264154914131305,
+            "permutation_importance_mean": -0.005809523809523808,
+            "permutation_importance_std": 0.0065285002253767125,
+            "importance_percent": 0.0,
+            "impurity_rank": 3,
+            "permutation_rank": 20,
+            "average_rank": 11.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "thalach",
+            "impurity_importance": 0.013068400194132091,
+            "permutation_importance_mean": -0.000476190476190478,
+            "permutation_importance_std": 0.00281718084909506,
+            "importance_percent": 0.0,
+            "impurity_rank": 15,
+            "permutation_rank": 10,
+            "average_rank": 12.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "sex_0",
+            "impurity_importance": 0.016356368880407656,
+            "permutation_importance_mean": -0.0012380952380952298,
+            "permutation_importance_std": 0.00710848874549985,
+            "importance_percent": 0.0,
+            "impurity_rank": 14,
+            "permutation_rank": 13,
+            "average_rank": 13.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "age_thalach_ratio",
+            "impurity_importance": 0.01912486436686392,
+            "permutation_importance_mean": -0.0024761904761904747,
+            "permutation_importance_std": 0.008434891362089348,
+            "importance_percent": 0.0,
+            "impurity_rank": 12,
+            "permutation_rank": 15,
+            "average_rank": 13.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "ca_0",
+            "impurity_importance": 0.07218594483393685,
+            "permutation_importance_mean": -0.014761904761904754,
+            "permutation_importance_std": 0.018612896316722232,
+            "importance_percent": 0.0,
+            "impurity_rank": 5,
+            "permutation_rank": 22,
+            "average_rank": 13.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "cp_2",
+            "impurity_importance": 0.007590855849118,
+            "permutation_importance_mean": 0.0005714285714285728,
+            "permutation_importance_std": 0.0008728715609439715,
+            "importance_percent": 4.1667,
+            "impurity_rank": 22,
+            "permutation_rank": 6,
+            "average_rank": 14.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "sex_1",
+            "impurity_importance": 0.012534325913140519,
+            "permutation_importance_mean": -0.0005714285714285637,
+            "permutation_importance_std": 0.005873959598136867,
+            "importance_percent": 0.0,
+            "impurity_rank": 17,
+            "permutation_rank": 11,
+            "average_rank": 14.0,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "cp_0",
+            "impurity_importance": 0.04055765798878824,
+            "permutation_importance_mean": -0.01276190476190477,
+            "permutation_importance_std": 0.016693583706366085,
+            "importance_percent": 0.0,
+            "impurity_rank": 8,
+            "permutation_rank": 21,
+            "average_rank": 14.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "oldpeak_thalach_ratio",
+            "impurity_importance": 0.06329231178531308,
+            "permutation_importance_mean": -0.027238095238095228,
+            "permutation_importance_std": 0.0167044469753666,
+            "importance_percent": 0.0,
+            "impurity_rank": 6,
+            "permutation_rank": 23,
+            "average_rank": 14.5,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "bp_age_ratio",
+            "impurity_importance": 0.008786428146542362,
+            "permutation_importance_mean": 0.0,
+            "permutation_importance_std": 0.0,
+            "importance_percent": 0.0,
+            "impurity_rank": 21,
+            "permutation_rank": 9,
+            "average_rank": 15.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "trestbps",
+            "impurity_importance": 0.010974350811882229,
+            "permutation_importance_mean": -0.003333333333333333,
+            "permutation_importance_std": 0.004582328275702634,
+            "importance_percent": 0.0,
+            "impurity_rank": 18,
+            "permutation_rank": 16,
+            "average_rank": 17.0,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "ca_3",
+            "impurity_importance": 0.0,
+            "permutation_importance_mean": -0.002285714285714288,
+            "permutation_importance_std": 0.001961072407807047,
+            "importance_percent": 0.0,
+            "impurity_rank": 23,
+            "permutation_rank": 14,
+            "average_rank": 18.5,
+            "importance_direction": "negative_or_unstable"
+        }
+    ],
+    "artifacts": {
+        "feature_importance_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\feature_importance\\feature_importance.csv",
+        "feature_importance_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\feature_importance\\feature_importance.json",
+        "feature_importance_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\feature_importance\\feature_importance.png"
+    }
+}

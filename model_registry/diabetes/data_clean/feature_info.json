@@ -1,0 +1,166 @@
+{
+    "dataset_name": "diabetes",
+    "target_column": "Outcome",
+    "features": [
+        {
+            "name": "Pregnancies",
+            "display_name": "Pregnancies",
+            "dtype": "int64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "Pregnancies feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 0,
+                "max": 17,
+                "mean": 3.8450520833333335,
+                "median": 3.0,
+                "std": 3.3695780626988694
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": false,
+                "cleaning_rule": "standard_numeric_cleaning"
+            }
+        },
+        {
+            "name": "Glucose",
+            "display_name": "Glucose",
+            "dtype": "int64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "Glucose feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 44,
+                "max": 199,
+                "mean": 121.65625,
+                "median": 117.0,
+                "std": 30.43828582241517
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": true,
+                "cleaning_rule": "zero_replaced_with_non_zero_median"
+            }
+        },
+        {
+            "name": "BloodPressure",
+            "display_name": "BloodPressure",
+            "dtype": "int64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "BloodPressure feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 24,
+                "max": 122,
+                "mean": 72.38671875,
+                "median": 72.0,
+                "std": 12.096641733978139
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": true,
+                "cleaning_rule": "zero_replaced_with_non_zero_median"
+            }
+        },
+        {
+            "name": "SkinThickness",
+            "display_name": "SkinThickness",
+            "dtype": "int64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "SkinThickness feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 7,
+                "max": 99,
+                "mean": 29.108072916666668,
+                "median": 29.0,
+                "std": 8.791221023089706
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": true,
+                "cleaning_rule": "zero_replaced_with_non_zero_median"
+            }
+        },
+        {
+            "name": "Insulin",
+            "display_name": "Insulin",
+            "dtype": "int64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "Insulin feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 14,
+                "max": 846,
+                "mean": 140.671875,
+                "median": 125.0,
+                "std": 86.383059693181
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": true,
+                "cleaning_rule": "zero_replaced_with_non_zero_median"
+            }
+        },
+        {
+            "name": "BMI",
+            "display_name": "BMI",
+            "dtype": "float64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "BMI feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 18.2,
+                "max": 67.1,
+                "mean": 32.45520833333333,
+                "median": 32.3,
+                "std": 6.875176818080995
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": true,
+                "cleaning_rule": "zero_replaced_with_non_zero_median"
+            }
+        },
+        {
+            "name": "DiabetesPedigreeFunction",
+            "display_name": "DiabetesPedigreeFunction",
+            "dtype": "float64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "DiabetesPedigreeFunction feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 0.078,
+                "max": 2.42,
+                "mean": 0.47187630208333325,
+                "median": 0.3725,
+                "std": 0.3313285950127749
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": false,
+                "cleaning_rule": "standard_numeric_cleaning"
+            }
+        },
+        {
+            "name": "Age",
+            "display_name": "Age",
+            "dtype": "int64",
+            "feature_type": "numeric",
+            "input_required": true,
+            "has_missing_after_cleaning": false,
+            "description": "Age feature used for diabetes prediction.",
+            "summary_statistics": {
+                "min": 21,
+                "max": 81,
+                "mean": 33.240885416666664,
+                "median": 29.0,
+                "std": 11.760231540678685
+            },
+            "special_handling": {
+                "invalid_zero_treated_as_missing": false,
+                "cleaning_rule": "standard_numeric_cleaning"
+            }
+        }
+    ]
+}

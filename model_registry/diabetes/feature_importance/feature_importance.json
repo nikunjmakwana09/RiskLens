@@ -1,0 +1,193 @@
+{
+    "dataset_name": "diabetes",
+    "analysis_type": "feature_importance",
+    "method": {
+        "primary": "permutation_importance",
+        "secondary": "extra_trees_impurity_importance",
+        "scoring_metric": "roc_auc",
+        "n_repeats": 20
+    },
+    "generated_at": "2026-04-03T16:51:35.879691Z",
+    "target_column": "Outcome",
+    "model_name": "CalibratedExtraTrees",
+    "model_family": "binary_classification",
+    "selected_feature_count": 14,
+    "feature_count": 14,
+    "top_n_plot_features": 14,
+    "ranking_method": "average_rank_of_impurity_and_permutation_importance",
+    "summary": {
+        "top_5_features_by_average_rank": [
+            "Glucose_Age",
+            "Glucose_BMI",
+            "BMI_Age",
+            "BMI",
+            "Glucose"
+        ],
+        "negative_or_unstable_permutation_features": [
+            "DPF_Age_Interaction",
+            "High_Glucose",
+            "Very_High_Glucose"
+        ]
+    },
+    "features": [
+        {
+            "feature": "Glucose_Age",
+            "impurity_importance": 0.15561603439212918,
+            "permutation_importance_mean": 0.011990131578947428,
+            "permutation_importance_std": 0.008761663057069892,
+            "importance_percent": 21.4917,
+            "impurity_rank": 1,
+            "permutation_rank": 1,
+            "average_rank": 1.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Glucose_BMI",
+            "impurity_importance": 0.11114346442946277,
+            "permutation_importance_mean": 0.008141447368421085,
+            "permutation_importance_std": 0.008656301720147102,
+            "importance_percent": 14.5932,
+            "impurity_rank": 4,
+            "permutation_rank": 3,
+            "average_rank": 3.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "BMI_Age",
+            "impurity_importance": 0.11214670439551253,
+            "permutation_importance_mean": 0.0074506578947369,
+            "permutation_importance_std": 0.005038669502621522,
+            "importance_percent": 13.355,
+            "impurity_rank": 3,
+            "permutation_rank": 4,
+            "average_rank": 3.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "BMI",
+            "impurity_importance": 0.07027534797828239,
+            "permutation_importance_mean": 0.008963815789473728,
+            "permutation_importance_std": 0.0033592516928023525,
+            "importance_percent": 16.0672,
+            "impurity_rank": 7,
+            "permutation_rank": 2,
+            "average_rank": 4.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Glucose",
+            "impurity_importance": 0.11555543700580759,
+            "permutation_importance_mean": 0.0026973684210527147,
+            "permutation_importance_std": 0.007959982582561437,
+            "importance_percent": 4.8349,
+            "impurity_rank": 2,
+            "permutation_rank": 7,
+            "average_rank": 4.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Age",
+            "impurity_importance": 0.09611889857901214,
+            "permutation_importance_mean": 0.006858552631578996,
+            "permutation_importance_std": 0.004011640944966235,
+            "importance_percent": 12.2936,
+            "impurity_rank": 5,
+            "permutation_rank": 5,
+            "average_rank": 5.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Obese",
+            "impurity_importance": 0.09005266965240091,
+            "permutation_importance_mean": 0.004128289473684271,
+            "permutation_importance_std": 0.007536036319162742,
+            "importance_percent": 7.3998,
+            "impurity_rank": 6,
+            "permutation_rank": 6,
+            "average_rank": 6.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Metabolic_Load",
+            "impurity_importance": 0.03985419575508727,
+            "permutation_importance_mean": 0.001875000000000049,
+            "permutation_importance_std": 0.005630768049095499,
+            "importance_percent": 3.3608,
+            "impurity_rank": 10,
+            "permutation_rank": 8,
+            "average_rank": 9.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Glucose_Insulin_Product",
+            "impurity_importance": 0.03191312661352994,
+            "permutation_importance_mean": 0.0018421052631579394,
+            "permutation_importance_std": 0.004965253227398206,
+            "importance_percent": 3.3019,
+            "impurity_rank": 12,
+            "permutation_rank": 9,
+            "average_rank": 10.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "SkinThickness",
+            "impurity_importance": 0.03538254424155411,
+            "permutation_importance_mean": 0.0008881578947368852,
+            "permutation_importance_std": 0.0021822379329765646,
+            "importance_percent": 1.592,
+            "impurity_rank": 11,
+            "permutation_rank": 11,
+            "average_rank": 11.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "DPF_Age_Interaction",
+            "impurity_importance": 0.05105681275793455,
+            "permutation_importance_mean": -0.0035526315789473238,
+            "permutation_importance_std": 0.007010207239459204,
+            "importance_percent": 0.0,
+            "impurity_rank": 9,
+            "permutation_rank": 13,
+            "average_rank": 11.0,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "High_Glucose",
+            "impurity_importance": 0.05213000830743676,
+            "permutation_importance_mean": -0.006299342105263122,
+            "permutation_importance_std": 0.013867102001462848,
+            "importance_percent": 0.0,
+            "impurity_rank": 8,
+            "permutation_rank": 14,
+            "average_rank": 11.0,
+            "importance_direction": "negative_or_unstable"
+        },
+        {
+            "feature": "Insulin",
+            "impurity_importance": 0.017886955600573514,
+            "permutation_importance_mean": 0.0009539473684210875,
+            "permutation_importance_std": 0.002787137489936884,
+            "importance_percent": 1.7099,
+            "impurity_rank": 14,
+            "permutation_rank": 10,
+            "average_rank": 12.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "Very_High_Glucose",
+            "impurity_importance": 0.020867800291276516,
+            "permutation_importance_mean": -0.0007072368421052356,
+            "permutation_importance_std": 0.0043976646310358355,
+            "importance_percent": 0.0,
+            "impurity_rank": 13,
+            "permutation_rank": 12,
+            "average_rank": 12.5,
+            "importance_direction": "negative_or_unstable"
+        }
+    ],
+    "artifacts": {
+        "feature_importance_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\diabetes\\feature_importance\\feature_importance.csv",
+        "feature_importance_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\diabetes\\feature_importance\\feature_importance.json",
+        "feature_importance_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\diabetes\\feature_importance\\feature_importance.png"
+    }
+}

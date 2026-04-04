@@ -1,0 +1,225 @@
+{
+    "dataset_name": "heart",
+    "raw_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\raw\\heart.csv",
+    "processed_data_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\processed\\heart_clean.csv",
+    "target_column": "target",
+    "pipeline_started_at": "2026-04-03T14:54:12.143125Z",
+    "pipeline_completed_at": "2026-04-03T14:54:12.205294Z",
+    "initial_shape": {
+        "rows": 1025,
+        "columns": 14
+    },
+    "final_shape": {
+        "rows": 302,
+        "columns": 14
+    },
+    "columns": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal",
+        "target"
+    ],
+    "schema_validation": {
+        "missing_columns": [],
+        "extra_columns": []
+    },
+    "steps": {
+        "duplicates_removed": 723,
+        "missing_markers_standardized": true,
+        "invalid_zero_replacements": {
+            "trestbps": {
+                "replaced_count": 0,
+                "replacement_strategy": "non_zero_median",
+                "median_used": null
+            },
+            "chol": {
+                "replaced_count": 0,
+                "replacement_strategy": "non_zero_median",
+                "median_used": null
+            },
+            "thalach": {
+                "replaced_count": 0,
+                "replacement_strategy": "non_zero_median",
+                "median_used": null
+            }
+        },
+        "datatype_enforcements": {
+            "age": {
+                "before": "int64",
+                "after": "float64"
+            },
+            "trestbps": {
+                "before": "int64",
+                "after": "float64"
+            },
+            "chol": {
+                "before": "int64",
+                "after": "float64"
+            },
+            "thalach": {
+                "before": "int64",
+                "after": "float64"
+            },
+            "oldpeak": {
+                "before": "float64",
+                "after": "float64"
+            },
+            "sex": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "cp": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "fbs": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "restecg": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "exang": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "slope": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "ca": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "thal": {
+                "before": "int64",
+                "after": "Int64"
+            },
+            "target": {
+                "before": "int64",
+                "after": "Int64"
+            }
+        },
+        "missing_imputation": {
+            "age": {
+                "strategy": "median",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "trestbps": {
+                "strategy": "median",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "chol": {
+                "strategy": "median",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "thalach": {
+                "strategy": "median",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "oldpeak": {
+                "strategy": "median",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "sex": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "cp": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "fbs": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "restecg": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "exang": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "slope": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "ca": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            },
+            "thal": {
+                "strategy": "mode",
+                "imputed_count": 0,
+                "fill_value": null
+            }
+        }
+    },
+    "validation": {
+        "target_unique_values": [
+            0,
+            1
+        ],
+        "missing_values_remaining": 0,
+        "negative_values_detected": false,
+        "target_column_present": true,
+        "categorical_range_warnings": {
+            "sex_not_in_{0,1}": 0,
+            "cp_outside_0_3": 0,
+            "fbs_not_in_{0,1}": 0,
+            "restecg_outside_0_2": 0,
+            "exang_not_in_{0,1}": 0,
+            "slope_outside_0_2": 0,
+            "ca_outside_0_4": 0,
+            "thal_outside_known_set": 0
+        },
+        "numerical_range_warnings": {
+            "age <= 0": 0,
+            "trestbps <= 0": 0,
+            "chol <= 0": 0,
+            "thalach <= 0": 0,
+            "oldpeak < 0": 0,
+            "age > 120": 0,
+            "trestbps > 300": 0,
+            "chol > 700": 0,
+            "thalach > 250": 0,
+            "oldpeak > 10": 0
+        }
+    },
+    "summary": {
+        "row_count": 302,
+        "column_count": 14,
+        "total_missing_values": 0,
+        "total_features": 13,
+        "categorical_feature_count": 8,
+        "numerical_feature_count": 5,
+        "target_distribution": {
+            "1": 164,
+            "0": 138
+        }
+    }
+}

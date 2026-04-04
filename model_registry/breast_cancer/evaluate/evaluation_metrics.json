@@ -1,0 +1,72 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:38:42.474354Z",
+    "metrics": {
+        "accuracy": 0.9767441860465116,
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "specificity": 0.9629629629629629,
+        "f1_score": 0.9696969696969697,
+        "balanced_accuracy": 0.9814814814814814,
+        "roc_auc": 0.9994212962962963,
+        "pr_auc": 0.9990530303030303,
+        "brier_score": 0.022615385004776892,
+        "threshold": 0.19999999999999996,
+        "prevalence": 0.37209302325581395,
+        "positive_prediction_rate": 0.3953488372093023
+    },
+    "evaluation_scope": "untouched recreated test split",
+    "source_training_artifacts": {
+        "model_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\train\\model.pkl",
+        "preprocessor_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\train\\preprocessor.pkl",
+        "threshold_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\train\\threshold.json",
+        "selected_features_path": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\train\\selected_features.json"
+    },
+    "train_summary_reference": {
+        "dataset_name": "breast_cancer",
+        "generated_at": "2026-04-03T14:38:27.856412Z",
+        "input_dataset_shape": {
+            "rows": 569,
+            "features": 35
+        },
+        "split_summary": {
+            "train_shape": {
+                "rows": 397,
+                "features": 35
+            },
+            "validation_shape": {
+                "rows": 86,
+                "features": 35
+            },
+            "test_shape": {
+                "rows": 86,
+                "features": 35
+            }
+        },
+        "target_distribution": {
+            "0": 357,
+            "1": 212
+        },
+        "best_cv_model": {
+            "model": "ExtraTrees",
+            "cv_roc_auc_mean": 0.9886200328407225,
+            "cv_roc_auc_std": 0.011015317314944763,
+            "cv_pr_auc_mean": 0.9842707659073533,
+            "cv_f1_mean": 0.9358954958736261,
+            "cv_recall_mean": 0.9257471264367816,
+            "cv_balanced_accuracy_mean": 0.9487919305653296,
+            "composite_score": 0.9637915258724989
+        },
+        "final_selected_model": "ExtraTrees",
+        "decision_threshold": 0.19999999999999996
+    },
+    "artifacts": {
+        "classification_report_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\classification_report.json",
+        "threshold_analysis_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\threshold_analysis.csv",
+        "error_analysis_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\error_analysis.json",
+        "confusion_matrix_plot": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\confusion_matrix.png",
+        "roc_curve_plot": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\roc_curve.png",
+        "precision_recall_curve_plot": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\precision_recall_curve.png",
+        "calibration_curve_plot": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\evaluate\\calibration_curve.png"
+    }
+}

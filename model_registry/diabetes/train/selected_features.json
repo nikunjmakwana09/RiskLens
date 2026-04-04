@@ -1,0 +1,21 @@
+{
+    "dataset_name": "diabetes",
+    "target_column": "Outcome",
+    "selected_features": [
+        "Insulin",
+        "Age",
+        "Glucose_Age",
+        "DPF_Age_Interaction",
+        "Metabolic_Load",
+        "High_Glucose",
+        "Very_High_Glucose",
+        "Glucose_Insulin_Product",
+        "Glucose",
+        "SkinThickness",
+        "BMI",
+        "Glucose_BMI",
+        "BMI_Age",
+        "Obese"
+    ],
+    "selected_feature_count": 14
+}

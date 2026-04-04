@@ -1,0 +1,210 @@
+{
+    "dataset_name": "heart",
+    "analysis_type": "eda",
+    "generated_at": "2026-04-03T14:54:25.357863Z",
+    "data_source": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\processed\\heart_clean.csv",
+    "dataset_overview": {
+        "rows": 302,
+        "columns": 14,
+        "feature_count": 13,
+        "numeric_feature_count": 13,
+        "categorical_feature_count": 8,
+        "duplicate_rows": 0,
+        "missing_values_total": 0
+    },
+    "target_column": "target",
+    "heart_disease_prevalence_percent": 54.3046,
+    "class_balance": {
+        "no_disease_count": 138,
+        "disease_count": 164,
+        "no_disease_rate_percent": 45.6954,
+        "disease_rate_percent": 54.3046,
+        "balance_status": "reasonably_balanced"
+    },
+    "feature_health": {
+        "features_with_outliers_count": 4,
+        "features_with_high_skew_count": 2
+    },
+    "top_features_by_absolute_correlation": [
+        {
+            "feature": "exang",
+            "correlation_with_target": -0.43560076171361906,
+            "absolute_correlation": 0.43560076171361906
+        },
+        {
+            "feature": "cp",
+            "correlation_with_target": 0.4320795915664077,
+            "absolute_correlation": 0.4320795915664077
+        },
+        {
+            "feature": "oldpeak",
+            "correlation_with_target": -0.4291458328867385,
+            "absolute_correlation": 0.4291458328867385
+        },
+        {
+            "feature": "thalach",
+            "correlation_with_target": 0.41995504366386993,
+            "absolute_correlation": 0.41995504366386993
+        },
+        {
+            "feature": "ca",
+            "correlation_with_target": -0.40899197975692675,
+            "absolute_correlation": 0.40899197975692675
+        },
+        {
+            "feature": "slope",
+            "correlation_with_target": 0.3439395324893872,
+            "absolute_correlation": 0.3439395324893872
+        },
+        {
+            "feature": "thal",
+            "correlation_with_target": -0.34310071238956474,
+            "absolute_correlation": 0.34310071238956474
+        },
+        {
+            "feature": "sex",
+            "correlation_with_target": -0.2836093577958624,
+            "absolute_correlation": 0.2836093577958624
+        },
+        {
+            "feature": "age",
+            "correlation_with_target": -0.22147582776656236,
+            "absolute_correlation": 0.22147582776656236
+        },
+        {
+            "feature": "trestbps",
+            "correlation_with_target": -0.146268663841554,
+            "absolute_correlation": 0.146268663841554
+        }
+    ],
+    "top_features_by_mutual_information": [
+        {
+            "feature": "thal",
+            "mutual_information": 0.18902376737224924
+        },
+        {
+            "feature": "cp",
+            "mutual_information": 0.16622892435269288
+        },
+        {
+            "feature": "ca",
+            "mutual_information": 0.12009728864223268
+        },
+        {
+            "feature": "exang",
+            "mutual_information": 0.09393399153746462
+        },
+        {
+            "feature": "chol",
+            "mutual_information": 0.08494011537201995
+        },
+        {
+            "feature": "oldpeak",
+            "mutual_information": 0.08406157005178927
+        },
+        {
+            "feature": "thalach",
+            "mutual_information": 0.07230776779027193
+        },
+        {
+            "feature": "slope",
+            "mutual_information": 0.05727785558858245
+        },
+        {
+            "feature": "trestbps",
+            "mutual_information": 0.036478572802569165
+        },
+        {
+            "feature": "age",
+            "mutual_information": 0.015074327041609825
+        }
+    ],
+    "top_features_by_class_mean_difference": [
+        {
+            "feature": "thalach",
+            "absolute_difference": 19.27659950512549,
+            "relative_difference_percent": 13.857942965760145
+        },
+        {
+            "feature": "chol",
+            "absolute_difference": 8.446712619300115,
+            "relative_difference_percent": 3.364058705522124
+        },
+        {
+            "feature": "trestbps",
+            "absolute_difference": 5.148550724637687,
+            "relative_difference_percent": 3.8308082169623163
+        },
+        {
+            "feature": "age",
+            "absolute_difference": 4.016083421703783,
+            "relative_difference_percent": 7.095372067534529
+        },
+        {
+            "feature": "oldpeak",
+            "absolute_difference": 0.9989218805231531,
+            "relative_difference_percent": 63.003299594239095
+        }
+    ],
+    "top_outlier_features": [
+        {
+            "feature": "trestbps",
+            "outlier_count": 9,
+            "outlier_percentage": 2.9801
+        },
+        {
+            "feature": "oldpeak",
+            "outlier_count": 5,
+            "outlier_percentage": 1.6556
+        },
+        {
+            "feature": "chol",
+            "outlier_count": 5,
+            "outlier_percentage": 1.6556
+        },
+        {
+            "feature": "thalach",
+            "outlier_count": 1,
+            "outlier_percentage": 0.3311
+        },
+        {
+            "feature": "age",
+            "outlier_count": 0,
+            "outlier_percentage": 0.0
+        }
+    ],
+    "high_skew_features": [
+        {
+            "feature": "oldpeak",
+            "skewness": 1.266172720910219,
+            "absolute_skewness": 1.266172720910219
+        },
+        {
+            "feature": "chol",
+            "skewness": 1.147332413980798,
+            "absolute_skewness": 1.147332413980798
+        }
+    ],
+    "training_recommendations": [
+        "Use stratified train-validation splitting to preserve class balance.",
+        "Review high-correlation and high-MI features before feature selection decisions.",
+        "Use caution with ordinal-encoded cardiac variables during preprocessing and model interpretation.",
+        "Handle skewness and outliers during training-time preprocessing rather than altering the cleaned dataset.",
+        "Prioritize recall, calibration, and threshold tuning because missed heart disease cases are clinically important."
+    ],
+    "artifacts": {
+        "basic_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\basic_summary.json",
+        "statistical_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\statistical_summary.csv",
+        "target_distribution_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\target_distribution.png",
+        "correlation_heatmap_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\correlation_heatmap.png",
+        "correlation_matrix_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\correlation_matrix.csv",
+        "target_correlations_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\target_correlations.csv",
+        "mutual_information_scores_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\mutual_information_scores.csv",
+        "mutual_information_top15_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\mutual_information_top13.png",
+        "outlier_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\outlier_summary.csv",
+        "skewness_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\skewness_summary.csv",
+        "classwise_mean_comparison_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\heart\\eda\\classwise_mean_comparison.csv",
+        "eda_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\eda\\eda_summary.json",
+        "eda_report_txt": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\heart\\eda\\eda_report.txt"
+    }
+}

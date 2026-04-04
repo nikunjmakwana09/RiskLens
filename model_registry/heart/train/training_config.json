@@ -1,0 +1,71 @@
+{
+    "dataset_name": "heart",
+    "target_column": "target",
+    "random_state": 42,
+    "test_size": 0.15,
+    "valid_size": 0.15,
+    "cv_folds": 5,
+    "feature_engineering": {
+        "enabled": true,
+        "engineered_features": [
+            "age_thalach_ratio",
+            "chol_age_ratio",
+            "bp_age_ratio",
+            "oldpeak_thalach_ratio"
+        ]
+    },
+    "feature_groups": {
+        "numerical_features": [
+            "age",
+            "trestbps",
+            "chol",
+            "thalach",
+            "oldpeak",
+            "age_thalach_ratio",
+            "chol_age_ratio",
+            "bp_age_ratio",
+            "oldpeak_thalach_ratio"
+        ],
+        "categorical_features": [
+            "sex",
+            "cp",
+            "fbs",
+            "restecg",
+            "exang",
+            "slope",
+            "ca",
+            "thal"
+        ],
+        "skewed_numerical_features": [
+            "chol",
+            "oldpeak",
+            "age_thalach_ratio",
+            "oldpeak_thalach_ratio"
+        ]
+    },
+    "preprocessing": {
+        "numeric_imputer": "median",
+        "categorical_imputer": "most_frequent",
+        "numeric_scaler": "standard_scaler",
+        "categorical_encoder": "one_hot_encoder(handle_unknown='ignore')",
+        "skew_handling": "log1p on skewed non-negative numeric features",
+        "feature_selection": "SelectKBest(f_classif, k=23)"
+    },
+    "candidate_models": {
+        "LogisticRegression": true,
+        "RandomForest": true,
+        "ExtraTrees": true,
+        "HistGradientBoosting": true,
+        "XGBoost": true,
+        "CatBoost": true
+    },
+    "final_model_selection": {
+        "best_model_name": "LogisticRegression",
+        "selection_strategy": "highest composite full-pipeline CV score"
+    },
+    "calibration": {
+        "enabled": true,
+        "method": "sigmoid",
+        "cv": 5
+    }
+}

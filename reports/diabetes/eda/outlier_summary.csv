@@ -1,0 +1,9 @@
+feature,q1,q3,iqr,lower_bound,upper_bound,outlier_count,outlier_percentage
+Insulin,121.5,127.25,5.75,112.875,135.875,346,45.0521
+SkinThickness,25.0,32.0,7.0,14.5,42.5,87,11.3281
+DiabetesPedigreeFunction,0.2437,0.6262,0.3825,-0.33,1.2,29,3.776
+BloodPressure,64.0,80.0,16.0,40.0,104.0,14,1.8229
+Age,24.0,41.0,17.0,-1.5,66.5,9,1.1719
+BMI,27.5,36.6,9.1,13.85,50.25,8,1.0417
+Pregnancies,1.0,6.0,5.0,-6.5,13.5,4,0.5208
+Glucose,99.75,140.25,40.5,39.0,201.0,0,0.0

@@ -1,0 +1,394 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:43:26.001086Z",
+    "threshold": 0.19999999999999996,
+    "explained_sample_count": 5,
+    "top_features_per_sample": 10,
+    "samples": [
+        {
+            "sample_index": 410,
+            "predicted_probability": 0.030429894035503956,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "radius_worst",
+                    "feature_value": -0.6704391872344609,
+                    "shap_value": -0.03486501016346351,
+                    "abs_shap_value": 0.03486501016346351,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_worst",
+                    "feature_value": -0.6575024539742162,
+                    "shap_value": -0.03221870525883541,
+                    "abs_shap_value": 0.03221870525883541,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_worst",
+                    "feature_value": -0.6611354088054282,
+                    "shap_value": -0.031808834671547014,
+                    "abs_shap_value": 0.031808834671547014,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_mean",
+                    "feature_value": -0.7186030841359198,
+                    "shap_value": -0.026988441458564605,
+                    "abs_shap_value": 0.026988441458564605,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_worst",
+                    "feature_value": -0.4314429119050012,
+                    "shap_value": -0.023027883494848453,
+                    "abs_shap_value": 0.023027883494848453,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_radius_ratio_mean",
+                    "feature_value": -0.756767883609112,
+                    "shap_value": -0.018452899927543807,
+                    "abs_shap_value": 0.018452899927543807,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_se",
+                    "feature_value": -1.006975929512324,
+                    "shap_value": -0.017514378407127166,
+                    "abs_shap_value": 0.017514378407127166,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_mean",
+                    "feature_value": -0.8036332428885844,
+                    "shap_value": -0.01618081861899394,
+                    "abs_shap_value": 0.01618081861899394,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_mean",
+                    "feature_value": -0.7765021729728518,
+                    "shap_value": -0.013583497939854137,
+                    "abs_shap_value": 0.013583497939854137,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concavity_worst",
+                    "feature_value": -0.42131979895783733,
+                    "shap_value": -0.013477191618941642,
+                    "abs_shap_value": 0.013477191618941642,
+                    "direction": "decrease_malignancy_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 420,
+            "predicted_probability": 0.019139300704338096,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "radius_worst",
+                    "feature_value": -0.6649600960667915,
+                    "shap_value": -0.037331754037627486,
+                    "abs_shap_value": 0.037331754037627486,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_worst",
+                    "feature_value": -0.6029545727697748,
+                    "shap_value": -0.03454795523730067,
+                    "abs_shap_value": 0.03454795523730067,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_worst",
+                    "feature_value": -0.6639089870126278,
+                    "shap_value": -0.03302608642931913,
+                    "abs_shap_value": 0.03302608642931913,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_worst",
+                    "feature_value": -0.7410677304280532,
+                    "shap_value": -0.028370613945473428,
+                    "abs_shap_value": 0.028370613945473428,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_mean",
+                    "feature_value": -0.9003666957638042,
+                    "shap_value": -0.027568549857194338,
+                    "abs_shap_value": 0.027568549857194338,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_radius_ratio_mean",
+                    "feature_value": -0.7374721448411,
+                    "shap_value": -0.01752653579613343,
+                    "abs_shap_value": 0.01752653579613343,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_mean",
+                    "feature_value": -0.7337498982488394,
+                    "shap_value": -0.01604373659660521,
+                    "abs_shap_value": 0.01604373659660521,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_mean",
+                    "feature_value": -0.7261205239725659,
+                    "shap_value": -0.013997381702903697,
+                    "abs_shap_value": 0.013997381702903697,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_mean",
+                    "feature_value": -0.7303810478516873,
+                    "shap_value": -0.013740744168068008,
+                    "abs_shap_value": 0.013740744168068008,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_se",
+                    "feature_value": -0.4866619847835003,
+                    "shap_value": -0.011674519767125689,
+                    "abs_shap_value": 0.011674519767125689,
+                    "direction": "decrease_malignancy_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 505,
+            "predicted_probability": 0.1527624036902967,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "area_worst",
+                    "feature_value": -1.4968678275054823,
+                    "shap_value": -0.047318401249819224,
+                    "abs_shap_value": 0.047318401249819224,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_worst",
+                    "feature_value": -1.3532837235028978,
+                    "shap_value": -0.04259762855213428,
+                    "abs_shap_value": 0.04259762855213428,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_worst",
+                    "feature_value": -1.4085107789664226,
+                    "shap_value": -0.04193288717683802,
+                    "abs_shap_value": 0.04193288717683802,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_mean",
+                    "feature_value": 0.5814441049776599,
+                    "shap_value": 0.03402171951642506,
+                    "abs_shap_value": 0.03402171951642506,
+                    "direction": "increase_malignancy_risk"
+                },
+                {
+                    "feature": "area_worst_to_mean",
+                    "feature_value": -0.5320327811202055,
+                    "shap_value": -0.025537289663288557,
+                    "abs_shap_value": 0.025537289663288557,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "compactness_mean",
+                    "feature_value": 2.2279598466397244,
+                    "shap_value": 0.02551999099712807,
+                    "abs_shap_value": 0.02551999099712807,
+                    "direction": "increase_malignancy_risk"
+                },
+                {
+                    "feature": "radius_worst_to_mean",
+                    "feature_value": -0.5994417173143702,
+                    "shap_value": -0.02269431257943762,
+                    "abs_shap_value": 0.02269431257943762,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_perimeter_ratio_mean",
+                    "feature_value": -1.0887600479718529,
+                    "shap_value": 0.019113227195274193,
+                    "abs_shap_value": 0.019113227195274193,
+                    "direction": "increase_malignancy_risk"
+                },
+                {
+                    "feature": "radius_mean",
+                    "feature_value": -1.264346485815632,
+                    "shap_value": -0.017507659526790013,
+                    "abs_shap_value": 0.017507659526790013,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_worst",
+                    "feature_value": -0.11907805074015232,
+                    "shap_value": -0.016802965355162073,
+                    "abs_shap_value": 0.016802965355162073,
+                    "direction": "decrease_malignancy_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 522,
+            "predicted_probability": 0.0006628393873197124,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "perimeter_worst",
+                    "feature_value": -1.0278198488001393,
+                    "shap_value": -0.03278867735776186,
+                    "abs_shap_value": 0.03278867735776186,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_worst",
+                    "feature_value": -0.9904167354010321,
+                    "shap_value": -0.03184943816121997,
+                    "abs_shap_value": 0.03184943816121997,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_worst",
+                    "feature_value": -0.9841839757348392,
+                    "shap_value": -0.03100857857447839,
+                    "abs_shap_value": 0.03100857857447839,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_worst",
+                    "feature_value": -1.3243923639483755,
+                    "shap_value": -0.026599651798652937,
+                    "abs_shap_value": 0.026599651798652937,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_mean",
+                    "feature_value": -1.13518354261474,
+                    "shap_value": -0.023118512544939723,
+                    "abs_shap_value": 0.023118512544939723,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_se",
+                    "feature_value": -1.494270903795567,
+                    "shap_value": -0.018062520517870755,
+                    "abs_shap_value": 0.018062520517870755,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concavity_worst",
+                    "feature_value": -1.3494438140606406,
+                    "shap_value": -0.016140458347445232,
+                    "abs_shap_value": 0.016140458347445232,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_radius_ratio_mean",
+                    "feature_value": -0.8214054928974353,
+                    "shap_value": -0.016134886817387586,
+                    "abs_shap_value": 0.016134886817387586,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_worst_to_mean",
+                    "feature_value": -1.0266766985267384,
+                    "shap_value": -0.015884368674377945,
+                    "abs_shap_value": 0.015884368674377945,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_worst_to_mean",
+                    "feature_value": -1.0738396309556721,
+                    "shap_value": -0.014877112069703399,
+                    "abs_shap_value": 0.014877112069703399,
+                    "direction": "decrease_malignancy_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 269,
+            "predicted_probability": 0.009577502078229414,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "area_worst",
+                    "feature_value": -1.0929990875152282,
+                    "shap_value": -0.03836945676238051,
+                    "abs_shap_value": 0.03836945676238051,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_worst",
+                    "feature_value": -1.0219793540736564,
+                    "shap_value": -0.03828020393524786,
+                    "abs_shap_value": 0.03828020393524786,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_worst",
+                    "feature_value": -1.0625837258818986,
+                    "shap_value": -0.03729931235044131,
+                    "abs_shap_value": 0.03729931235044131,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_worst",
+                    "feature_value": -0.4463609218436735,
+                    "shap_value": -0.026533852967965166,
+                    "abs_shap_value": 0.026533852967965166,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_worst_to_mean",
+                    "feature_value": -0.6171135880301337,
+                    "shap_value": -0.023333404858487967,
+                    "abs_shap_value": 0.023333404858487967,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "concave_points_mean",
+                    "feature_value": -0.5126000088385502,
+                    "shap_value": -0.020258644006278873,
+                    "abs_shap_value": 0.020258644006278873,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "radius_worst_to_mean",
+                    "feature_value": -0.6516397583564977,
+                    "shap_value": -0.020246566228703206,
+                    "abs_shap_value": 0.020246566228703206,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_radius_ratio_mean",
+                    "feature_value": -1.0227941148661612,
+                    "shap_value": -0.016575922839280333,
+                    "abs_shap_value": 0.016575922839280333,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "area_mean",
+                    "feature_value": -1.0806710322042554,
+                    "shap_value": -0.015982850144752942,
+                    "abs_shap_value": 0.015982850144752942,
+                    "direction": "decrease_malignancy_risk"
+                },
+                {
+                    "feature": "perimeter_mean",
+                    "feature_value": -0.925826927375623,
+                    "shap_value": -0.015664366860604375,
+                    "abs_shap_value": 0.015664366860604375,
+                    "direction": "decrease_malignancy_risk"
+                }
+            ]
+        }
+    ]
+}

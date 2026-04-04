@@ -1,0 +1,174 @@
+{
+    "dataset_name": "heart",
+    "evaluated_at_utc": "2026-04-03T14:55:17.543246Z",
+    "threshold_used": 0.38,
+    "total_test_samples": 61,
+    "total_errors": 54,
+    "false_positives": {
+        "count": 27,
+        "rate_percent": 44.26,
+        "mean_probability": 0.86125
+    },
+    "false_negatives": {
+        "count": 27,
+        "rate_percent": 44.26,
+        "mean_probability": 0.126232
+    },
+    "hardest_false_positives_top10": [
+        {
+            "test_index": 105,
+            "y_prob": 0.995333815595334
+        },
+        {
+            "test_index": 257,
+            "y_prob": 0.9947903776342708
+        },
+        {
+            "test_index": 142,
+            "y_prob": 0.994443568600159
+        },
+        {
+            "test_index": 222,
+            "y_prob": 0.99345296726431
+        },
+        {
+            "test_index": 172,
+            "y_prob": 0.992706107417069
+        },
+        {
+            "test_index": 31,
+            "y_prob": 0.9909979352218329
+        },
+        {
+            "test_index": 289,
+            "y_prob": 0.9900668122967605
+        },
+        {
+            "test_index": 133,
+            "y_prob": 0.9866235366526355
+        },
+        {
+            "test_index": 143,
+            "y_prob": 0.9747773132976831
+        },
+        {
+            "test_index": 282,
+            "y_prob": 0.9730289772255277
+        }
+    ],
+    "hardest_false_negatives_top10": [
+        {
+            "test_index": 62,
+            "y_prob": 0.009226016213540822
+        },
+        {
+            "test_index": 173,
+            "y_prob": 0.014870062694780313
+        },
+        {
+            "test_index": 256,
+            "y_prob": 0.02251631396222511
+        },
+        {
+            "test_index": 17,
+            "y_prob": 0.023243368938674798
+        },
+        {
+            "test_index": 197,
+            "y_prob": 0.031541831737228326
+        },
+        {
+            "test_index": 102,
+            "y_prob": 0.03968294697525665
+        },
+        {
+            "test_index": 278,
+            "y_prob": 0.04345119020925855
+        },
+        {
+            "test_index": 179,
+            "y_prob": 0.043965607071340805
+        },
+        {
+            "test_index": 170,
+            "y_prob": 0.04685041502051039
+        },
+        {
+            "test_index": 148,
+            "y_prob": 0.04727674381883617
+        }
+    ],
+    "most_uncertain_cases": [
+        {
+            "y_true": 0,
+            "y_pred": 1,
+            "y_prob": 0.49809116907535683,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.0019088309246431678
+        },
+        {
+            "y_true": 0,
+            "y_pred": 1,
+            "y_prob": 0.49750716418186464,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.002492835818135364
+        },
+        {
+            "y_true": 0,
+            "y_pred": 1,
+            "y_prob": 0.4787666424589471,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.021233357541052877
+        },
+        {
+            "y_true": 0,
+            "y_pred": 1,
+            "y_prob": 0.4698891215149563,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.03011087848504368
+        },
+        {
+            "y_true": 1,
+            "y_pred": 1,
+            "y_prob": 0.5652475950612568,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.06524759506125677
+        },
+        {
+            "y_true": 1,
+            "y_pred": 1,
+            "y_prob": 0.4333852475439467,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.0666147524560533
+        },
+        {
+            "y_true": 1,
+            "y_pred": 1,
+            "y_prob": 0.5907927837091638,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.09079278370916377
+        },
+        {
+            "y_true": 1,
+            "y_pred": 0,
+            "y_prob": 0.37639634565307734,
+            "error_type": "false_negative",
+            "distance_from_decision_boundary": 0.12360365434692266
+        },
+        {
+            "y_true": 1,
+            "y_pred": 0,
+            "y_prob": 0.2954240446186415,
+            "error_type": "false_negative",
+            "distance_from_decision_boundary": 0.20457595538135848
+        },
+        {
+            "y_true": 1,
+            "y_pred": 1,
+            "y_prob": 0.7229830931573,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.22298309315730003
+        }
+    ],
+    "clinical_note": "False negatives are important because missed heart disease risk can delay intervention; false positives may increase follow-up testing burden."
+}

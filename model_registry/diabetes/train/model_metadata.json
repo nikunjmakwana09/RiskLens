@@ -1,0 +1,55 @@
+{
+    "dataset_name": "diabetes",
+    "generated_at": "2026-04-03T14:51:34.319613Z",
+    "model_name": "CalibratedExtraTrees",
+    "model_family": "binary_classification",
+    "target_column": "Outcome",
+    "prediction_output": "probability_of_diabetes",
+    "selected_features_count": 14,
+    "selected_features": [
+        "Insulin",
+        "Age",
+        "Glucose_Age",
+        "DPF_Age_Interaction",
+        "Metabolic_Load",
+        "High_Glucose",
+        "Very_High_Glucose",
+        "Glucose_Insulin_Product",
+        "Glucose",
+        "SkinThickness",
+        "BMI",
+        "Glucose_BMI",
+        "BMI_Age",
+        "Obese"
+    ],
+    "base_model": "ExtraTrees",
+    "calibration": {
+        "enabled": true,
+        "method": "sigmoid",
+        "cv": 5
+    },
+    "thresholding": {
+        "enabled": true,
+        "selection_strategy": "validation-set recall-aware threshold tuning"
+    },
+    "performance_snapshot": {
+        "train_f1": 0.7540322580645161,
+        "validation_f1": 0.6422018348623854,
+        "test_f1": 0.6851851851851852,
+        "train_roc_auc": 0.9568055406585662,
+        "validation_roc_auc": 0.818861788617886,
+        "test_roc_auc": 0.8253289473684211,
+        "test_pr_auc": 0.6942121763342842,
+        "test_brier_score": 0.1670715154106674
+    },
+    "artifact_files": [
+        "model.pkl",
+        "preprocessor.pkl",
+        "selected_features.json",
+        "threshold.json",
+        "training_config.json",
+        "training_summary.json",
+        "model_metadata.json",
+        "train_metrics.json"
+    ]
+}

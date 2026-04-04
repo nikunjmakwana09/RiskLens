@@ -1,0 +1,229 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:39:08.401232Z",
+    "target_column": "target",
+    "feature_count": 20,
+    "top_n_plot_features": 20,
+    "ranking_method": "average_rank_of_impurity_and_permutation_importance",
+    "primary_plot_metric": "permutation_importance_mean",
+    "model_name": "CalibratedExtraTrees",
+    "model_family": "binary_classification",
+    "selected_feature_count": 20,
+    "summary": {
+        "top_5_features_by_average_rank": [
+            "concave_points_worst",
+            "concave_points_mean",
+            "radius_worst",
+            "area_worst",
+            "concavity_mean"
+        ],
+        "negative_or_unstable_permutation_features": []
+    },
+    "features": [
+        {
+            "feature": "concave_points_worst",
+            "impurity_importance": 0.08410714498312102,
+            "permutation_importance_mean": 0.0008337297183023673,
+            "permutation_importance_std": 0.0002088672561267644,
+            "impurity_rank": 2,
+            "permutation_rank": 1,
+            "average_rank": 1.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "concave_points_mean",
+            "impurity_importance": 0.07995735383032856,
+            "permutation_importance_mean": 0.0006011838697743243,
+            "permutation_importance_std": 0.00016000625356068457,
+            "impurity_rank": 5,
+            "permutation_rank": 3,
+            "average_rank": 4.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "radius_worst",
+            "impurity_importance": 0.08526898770530547,
+            "permutation_importance_mean": 0.0003435336398710631,
+            "permutation_importance_std": 0.00028034877856799093,
+            "impurity_rank": 1,
+            "permutation_rank": 8,
+            "average_rank": 4.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "area_worst",
+            "impurity_importance": 0.08021190008732086,
+            "permutation_importance_mean": 0.00040034881877278885,
+            "permutation_importance_std": 0.0002927201535508119,
+            "impurity_rank": 4,
+            "permutation_rank": 7,
+            "average_rank": 5.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "concavity_mean",
+            "impurity_importance": 0.06307290569924061,
+            "permutation_importance_mean": 0.0005192643094973804,
+            "permutation_importance_std": 0.00012563312356130073,
+            "impurity_rank": 6,
+            "permutation_rank": 6,
+            "average_rank": 6.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "perimeter_worst",
+            "impurity_importance": 0.08086081781739868,
+            "permutation_importance_mean": 0.0002642566460546392,
+            "permutation_importance_std": 0.00025463428161327437,
+            "impurity_rank": 3,
+            "permutation_rank": 9,
+            "average_rank": 6.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "concavity_worst",
+            "impurity_importance": 0.055294295641154345,
+            "permutation_importance_mean": 0.0005562602399450612,
+            "permutation_importance_std": 0.00017038407058833622,
+            "impurity_rank": 8,
+            "permutation_rank": 5,
+            "average_rank": 6.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "area_worst_to_mean",
+            "impurity_importance": 0.03951219748582973,
+            "permutation_importance_mean": 0.0007095290946567357,
+            "permutation_importance_std": 0.0002698169059014997,
+            "impurity_rank": 13,
+            "permutation_rank": 2,
+            "average_rank": 7.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "radius_worst_to_mean",
+            "impurity_importance": 0.039472143105542694,
+            "permutation_importance_mean": 0.0005972200200835221,
+            "permutation_importance_std": 0.0002641112649084798,
+            "impurity_rank": 14,
+            "permutation_rank": 4,
+            "average_rank": 9.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "area_se",
+            "impurity_importance": 0.04059277649680398,
+            "permutation_importance_mean": 0.00022726071560701387,
+            "permutation_importance_std": 0.00014005602240896328,
+            "impurity_rank": 12,
+            "permutation_rank": 12,
+            "average_rank": 12.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "area_radius_ratio_mean",
+            "impurity_importance": 0.05251507428705525,
+            "permutation_importance_mean": 9.513239257966655e-05,
+            "permutation_importance_std": 0.00013980650141548714,
+            "impurity_rank": 9,
+            "permutation_rank": 17,
+            "average_rank": 13.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "perimeter_mean",
+            "impurity_importance": 0.056044211180691014,
+            "permutation_importance_mean": 1.4534115532993664e-05,
+            "permutation_importance_std": 0.00011326873405287816,
+            "impurity_rank": 7,
+            "permutation_rank": 19,
+            "average_rank": 13.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "compactness_concavity_interaction",
+            "impurity_importance": 0.034737846477532655,
+            "permutation_importance_mean": 0.00020876275038316238,
+            "permutation_importance_std": 6.601128902695587e-05,
+            "impurity_rank": 15,
+            "permutation_rank": 14,
+            "average_rank": 14.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "area_mean",
+            "impurity_importance": 0.04436221806205047,
+            "permutation_importance_mean": 4.624491305958989e-05,
+            "permutation_importance_std": 0.00010640227485486214,
+            "impurity_rank": 11,
+            "permutation_rank": 18,
+            "average_rank": 14.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "radius_se",
+            "impurity_importance": 0.01714599541791373,
+            "permutation_importance_mean": 0.0002536863802124478,
+            "permutation_importance_std": 7.812348976845553e-05,
+            "impurity_rank": 20,
+            "permutation_rank": 10,
+            "average_rank": 15.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "perimeter_se",
+            "impurity_importance": 0.02103539453516875,
+            "permutation_importance_mean": 0.00022990328206754507,
+            "permutation_importance_std": 6.870672797419929e-05,
+            "impurity_rank": 19,
+            "permutation_rank": 11,
+            "average_rank": 15.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "radius_mean",
+            "impurity_importance": 0.04556514317539878,
+            "permutation_importance_mean": 1.1891549072440277e-05,
+            "permutation_importance_std": 0.00010790120175057925,
+            "impurity_rank": 10,
+            "permutation_rank": 20,
+            "average_rank": 15.0,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "compactness_mean",
+            "impurity_importance": 0.022500452575007244,
+            "permutation_importance_mean": 0.0002272607156070028,
+            "permutation_importance_std": 7.677099015029738e-05,
+            "impurity_rank": 18,
+            "permutation_rank": 13,
+            "average_rank": 15.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "radius_perimeter_ratio_mean",
+            "impurity_importance": 0.032998952798963435,
+            "permutation_importance_mean": 0.00019290735161988647,
+            "permutation_importance_std": 5.67383081062967e-05,
+            "impurity_rank": 16,
+            "permutation_rank": 15,
+            "average_rank": 15.5,
+            "importance_direction": "positive_or_neutral"
+        },
+        {
+            "feature": "compactness_worst",
+            "impurity_importance": 0.024744188638172834,
+            "permutation_importance_mean": 0.000171766819935526,
+            "permutation_importance_std": 0.00010619698376094971,
+            "impurity_rank": 17,
+            "permutation_rank": 16,
+            "average_rank": 16.5,
+            "importance_direction": "positive_or_neutral"
+        }
+    ],
+    "artifacts": {
+        "feature_importance_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\feature_importance\\feature_importance.csv",
+        "feature_importance_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\feature_importance\\feature_importance.png",
+        "feature_importance_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\feature_importance\\feature_importance.json"
+    }
+}

@@ -1,0 +1,139 @@
+{
+    "dataset_name": "diabetes",
+    "generated_at": "2026-04-03T16:50:31.086765Z",
+    "total_cases": 154,
+    "total_errors": 44,
+    "false_positive_count": 41,
+    "false_negative_count": 3,
+    "average_false_positive_probability": 0.5754647471323954,
+    "average_false_negative_probability": 0.17361332999769175,
+    "hardest_false_positives_top10": [
+        {
+            "test_index": 260,
+            "predicted_probability": 0.9268190964561497
+        },
+        {
+            "test_index": 212,
+            "predicted_probability": 0.9152774288043105
+        },
+        {
+            "test_index": 489,
+            "predicted_probability": 0.8367910433230911
+        },
+        {
+            "test_index": 469,
+            "predicted_probability": 0.8339802743463856
+        },
+        {
+            "test_index": 247,
+            "predicted_probability": 0.8168262018492989
+        },
+        {
+            "test_index": 335,
+            "predicted_probability": 0.807199294139232
+        },
+        {
+            "test_index": 258,
+            "predicted_probability": 0.7849079639393518
+        },
+        {
+            "test_index": 244,
+            "predicted_probability": 0.734110423444968
+        },
+        {
+            "test_index": 437,
+            "predicted_probability": 0.7296377396277469
+        },
+        {
+            "test_index": 44,
+            "predicted_probability": 0.7225409999934079
+        }
+    ],
+    "hardest_false_negatives_top10": [
+        {
+            "test_index": 6,
+            "predicted_probability": 0.06841499866937598
+        },
+        {
+            "test_index": 678,
+            "predicted_probability": 0.21360637437642535
+        },
+        {
+            "test_index": 124,
+            "predicted_probability": 0.2388186169472739
+        }
+    ],
+    "most_uncertain_cases": [
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.5044269894060279,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.004426989406027926
+        },
+        {
+            "actual": 0,
+            "predicted": 1,
+            "predicted_probability": 0.5129547589414974,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.012954758941497446
+        },
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.4817128089130065,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.018287191086993504
+        },
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.5241291075966189,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.024129107596618904
+        },
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.4674828210812641,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.0325171789187359
+        },
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.45582053701166203,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.04417946298833797
+        },
+        {
+            "actual": 0,
+            "predicted": 1,
+            "predicted_probability": 0.5442582551591957,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.04425825515919568
+        },
+        {
+            "actual": 0,
+            "predicted": 1,
+            "predicted_probability": 0.4534464757506642,
+            "error_type": "false_positive",
+            "distance_from_decision_boundary": 0.04655352424933579
+        },
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.5482395640379915,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.048239564037991456
+        },
+        {
+            "actual": 1,
+            "predicted": 1,
+            "predicted_probability": 0.5492863757459061,
+            "error_type": "correct",
+            "distance_from_decision_boundary": 0.04928637574590611
+        }
+    ],
+    "clinical_note": "False negatives matter because missed diabetes risk can delay early intervention; false positives matter because they can trigger unnecessary anxiety or follow-up testing."
+}

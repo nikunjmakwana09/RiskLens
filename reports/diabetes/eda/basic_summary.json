@@ -1,0 +1,55 @@
+{
+    "dataset_name": "diabetes",
+    "generated_at": "2026-04-03T14:46:30.158951Z",
+    "shape": {
+        "rows": 768,
+        "columns": 9
+    },
+    "target_column": "Outcome",
+    "feature_count": 8,
+    "numeric_feature_count": 8,
+    "categorical_feature_count": 0,
+    "numeric_features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+    ],
+    "categorical_features": [],
+    "target_distribution": {
+        "0": 500,
+        "1": 268
+    },
+    "target_rate_percent": {
+        "0": 65.1042,
+        "1": 34.8958
+    },
+    "class_balance_status": "moderate_imbalance",
+    "missing_values": {
+        "Pregnancies": 0,
+        "Glucose": 0,
+        "BloodPressure": 0,
+        "SkinThickness": 0,
+        "Insulin": 0,
+        "BMI": 0,
+        "DiabetesPedigreeFunction": 0,
+        "Age": 0,
+        "Outcome": 0
+    },
+    "data_types": {
+        "Pregnancies": "int64",
+        "Glucose": "int64",
+        "BloodPressure": "int64",
+        "SkinThickness": "int64",
+        "Insulin": "int64",
+        "BMI": "float64",
+        "DiabetesPedigreeFunction": "float64",
+        "Age": "int64",
+        "Outcome": "int64"
+    },
+    "duplicate_rows": 0
+}

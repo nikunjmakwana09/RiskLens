@@ -1,0 +1,60 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:38:27.856444Z",
+    "model_name": "CalibratedExtraTrees",
+    "model_family": "binary_classification",
+    "target_column": "target",
+    "selected_features_count": 20,
+    "selected_features": [
+        "area_mean",
+        "compactness_mean",
+        "concavity_mean",
+        "concave_points_mean",
+        "radius_se",
+        "perimeter_se",
+        "area_se",
+        "radius_worst",
+        "perimeter_worst",
+        "area_worst",
+        "compactness_worst",
+        "concavity_worst",
+        "radius_worst_to_mean",
+        "area_worst_to_mean",
+        "compactness_concavity_interaction",
+        "radius_mean",
+        "perimeter_mean",
+        "concave_points_worst",
+        "radius_perimeter_ratio_mean",
+        "area_radius_ratio_mean"
+    ],
+    "base_model": "ExtraTrees",
+    "calibration": {
+        "enabled": true,
+        "method": "sigmoid",
+        "cv": 5
+    },
+    "thresholding": {
+        "enabled": true,
+        "selection_strategy": "validation-set recall-aware threshold tuning"
+    },
+    "performance_snapshot": {
+        "train_f1": 0.9164086687306502,
+        "validation_f1": 0.9411764705882353,
+        "test_f1": 0.9696969696969697,
+        "train_roc_auc": 0.9995115597525236,
+        "validation_roc_auc": 0.9953703703703703,
+        "test_roc_auc": 0.9994212962962963,
+        "test_pr_auc": 0.9990530303030303,
+        "test_brier_score": 0.022615385004776896
+    },
+    "artifact_files": [
+        "model.pkl",
+        "preprocessor.pkl",
+        "selected_features.json",
+        "threshold.json",
+        "training_config.json",
+        "training_summary.json",
+        "model_metadata.json",
+        "train_metrics.json"
+    ]
+}

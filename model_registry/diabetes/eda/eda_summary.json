@@ -1,0 +1,227 @@
+{
+    "dataset_name": "diabetes",
+    "analysis_type": "eda",
+    "generated_at": "2026-04-03T14:46:31.929064Z",
+    "data_source": "c:\\Users\\nikun\\Desktop\\RiskLens\\data\\processed\\diabetes_clean.csv",
+    "dataset_overview": {
+        "rows": 768,
+        "columns": 9,
+        "feature_count": 8,
+        "numeric_feature_count": 8,
+        "categorical_feature_count": 0,
+        "duplicate_rows": 0,
+        "missing_values_total": 0
+    },
+    "target_column": "Outcome",
+    "diabetes_prevalence_percent": 34.8958,
+    "class_balance": {
+        "non_diabetic_count": 500,
+        "diabetic_count": 268,
+        "non_diabetic_rate_percent": 65.1042,
+        "diabetic_rate_percent": 34.8958,
+        "balance_status": "moderate_imbalance"
+    },
+    "feature_health": {
+        "features_with_outliers_count": 7,
+        "features_with_high_skew_count": 3
+    },
+    "top_features_by_absolute_correlation": [
+        {
+            "feature": "Glucose",
+            "correlation_with_target": 0.4927824039150268,
+            "absolute_correlation": 0.4927824039150268
+        },
+        {
+            "feature": "BMI",
+            "correlation_with_target": 0.31203833867711117,
+            "absolute_correlation": 0.31203833867711117
+        },
+        {
+            "feature": "Age",
+            "correlation_with_target": 0.23835598302719757,
+            "absolute_correlation": 0.23835598302719757
+        },
+        {
+            "feature": "Pregnancies",
+            "correlation_with_target": 0.22189815303398636,
+            "absolute_correlation": 0.22189815303398636
+        },
+        {
+            "feature": "SkinThickness",
+            "correlation_with_target": 0.2148732193919899,
+            "absolute_correlation": 0.2148732193919899
+        },
+        {
+            "feature": "Insulin",
+            "correlation_with_target": 0.2037903422445466,
+            "absolute_correlation": 0.2037903422445466
+        },
+        {
+            "feature": "DiabetesPedigreeFunction",
+            "correlation_with_target": 0.17384406565296004,
+            "absolute_correlation": 0.17384406565296004
+        },
+        {
+            "feature": "BloodPressure",
+            "correlation_with_target": 0.16572291308057696,
+            "absolute_correlation": 0.16572291308057696
+        }
+    ],
+    "top_features_by_mutual_information": [
+        {
+            "feature": "Glucose",
+            "mutual_information": 0.11773326430464359
+        },
+        {
+            "feature": "BMI",
+            "mutual_information": 0.08104043876020284
+        },
+        {
+            "feature": "Pregnancies",
+            "mutual_information": 0.06098491461047906
+        },
+        {
+            "feature": "Age",
+            "mutual_information": 0.05139531623906901
+        },
+        {
+            "feature": "DiabetesPedigreeFunction",
+            "mutual_information": 0.014589811660974839
+        },
+        {
+            "feature": "Insulin",
+            "mutual_information": 0.012804231832826751
+        },
+        {
+            "feature": "SkinThickness",
+            "mutual_information": 0.012371636958805832
+        },
+        {
+            "feature": "BloodPressure",
+            "mutual_information": 0.0017629530637111035
+        }
+    ],
+    "top_features_by_class_mean_difference": [
+        {
+            "feature": "Insulin",
+            "absolute_difference": 36.90949253731344,
+            "relative_difference_percent": 28.88247506675961
+        },
+        {
+            "feature": "Glucose",
+            "absolute_difference": 31.44859701492537,
+            "relative_difference_percent": 28.413470135094563
+        },
+        {
+            "feature": "Age",
+            "absolute_difference": 5.877164179104479,
+            "relative_difference_percent": 18.843104133069826
+        },
+        {
+            "feature": "BMI",
+            "absolute_difference": 4.497982089552234,
+            "relative_difference_percent": 14.56336315160539
+        },
+        {
+            "feature": "BloodPressure",
+            "absolute_difference": 4.203134328358203,
+            "relative_difference_percent": 5.926585347374793
+        },
+        {
+            "feature": "SkinThickness",
+            "absolute_difference": 3.960567164179107,
+            "relative_difference_percent": 14.284668412966555
+        },
+        {
+            "feature": "Pregnancies",
+            "absolute_difference": 1.567671641791045,
+            "relative_difference_percent": 47.534009757157214
+        },
+        {
+            "feature": "DiabetesPedigreeFunction",
+            "absolute_difference": 0.12076599999999998,
+            "relative_difference_percent": 28.102500616660535
+        }
+    ],
+    "top_outlier_features": [
+        {
+            "feature": "Insulin",
+            "outlier_count": 346,
+            "outlier_percentage": 45.0521
+        },
+        {
+            "feature": "SkinThickness",
+            "outlier_count": 87,
+            "outlier_percentage": 11.3281
+        },
+        {
+            "feature": "DiabetesPedigreeFunction",
+            "outlier_count": 29,
+            "outlier_percentage": 3.776
+        },
+        {
+            "feature": "BloodPressure",
+            "outlier_count": 14,
+            "outlier_percentage": 1.8229
+        },
+        {
+            "feature": "Age",
+            "outlier_count": 9,
+            "outlier_percentage": 1.1719
+        },
+        {
+            "feature": "BMI",
+            "outlier_count": 8,
+            "outlier_percentage": 1.0417
+        },
+        {
+            "feature": "Pregnancies",
+            "outlier_count": 4,
+            "outlier_percentage": 0.5208
+        },
+        {
+            "feature": "Glucose",
+            "outlier_count": 0,
+            "outlier_percentage": 0.0
+        }
+    ],
+    "high_skew_features": [
+        {
+            "feature": "Insulin",
+            "skewness": 3.380019128212173,
+            "absolute_skewness": 3.380019128212173
+        },
+        {
+            "feature": "DiabetesPedigreeFunction",
+            "skewness": 1.919911066307204,
+            "absolute_skewness": 1.919911066307204
+        },
+        {
+            "feature": "Age",
+            "skewness": 1.1295967011444805,
+            "absolute_skewness": 1.1295967011444805
+        }
+    ],
+    "training_recommendations": [
+        "Use stratified train-validation splitting to preserve class balance.",
+        "Review high-correlation and high-MI features before feature selection decisions.",
+        "Consider robust scaling or outlier-tolerant models for high-outlier variables.",
+        "Handle skewness during training-time preprocessing rather than altering the cleaned dataset.",
+        "Prioritize recall, calibration, and threshold tuning because missed diabetic cases are clinically important."
+    ],
+    "artifacts": {
+        "basic_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\basic_summary.json",
+        "statistical_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\statistical_summary.csv",
+        "target_distribution_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\target_distribution.png",
+        "correlation_heatmap_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\correlation_heatmap.png",
+        "correlation_matrix_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\correlation_matrix.csv",
+        "target_correlations_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\target_correlations.csv",
+        "mutual_information_scores_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\mutual_information_scores.csv",
+        "mutual_information_top15_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\mutual_information_top8.png",
+        "outlier_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\outlier_summary.csv",
+        "skewness_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\skewness_summary.csv",
+        "classwise_mean_comparison_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\diabetes\\eda\\classwise_mean_comparison.csv",
+        "eda_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\diabetes\\eda\\eda_summary.json",
+        "eda_report_txt": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\diabetes\\eda\\eda_report.txt"
+    }
+}

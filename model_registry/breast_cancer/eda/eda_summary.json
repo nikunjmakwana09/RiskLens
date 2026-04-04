@@ -1,0 +1,298 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:37:59.227357Z",
+    "target_column": "target",
+    "dataset_overview": {
+        "rows": 569,
+        "columns": 31,
+        "feature_count": 30,
+        "numeric_feature_count": 30,
+        "categorical_feature_count": 0,
+        "duplicate_rows": 0,
+        "missing_values_total": 0
+    },
+    "class_balance": {
+        "benign_count": 357,
+        "malignant_count": 212,
+        "benign_rate_percent": 62.7417,
+        "malignant_rate_percent": 37.2583,
+        "balance_status": "reasonably_balanced"
+    },
+    "feature_health": {
+        "features_with_outliers_count": 29,
+        "features_with_high_skew_count": 22
+    },
+    "top_features_by_absolute_correlation": [
+        {
+            "feature": "concave_points_worst",
+            "correlation_with_target": 0.7935660171412694,
+            "absolute_correlation": 0.7935660171412694
+        },
+        {
+            "feature": "perimeter_worst",
+            "correlation_with_target": 0.7829141371737595,
+            "absolute_correlation": 0.7829141371737595
+        },
+        {
+            "feature": "concave_points_mean",
+            "correlation_with_target": 0.7766138400204369,
+            "absolute_correlation": 0.7766138400204369
+        },
+        {
+            "feature": "radius_worst",
+            "correlation_with_target": 0.7764537785950396,
+            "absolute_correlation": 0.7764537785950396
+        },
+        {
+            "feature": "perimeter_mean",
+            "correlation_with_target": 0.7426355297258334,
+            "absolute_correlation": 0.7426355297258334
+        },
+        {
+            "feature": "area_worst",
+            "correlation_with_target": 0.7338250349210502,
+            "absolute_correlation": 0.7338250349210502
+        },
+        {
+            "feature": "radius_mean",
+            "correlation_with_target": 0.7300285113754562,
+            "absolute_correlation": 0.7300285113754562
+        },
+        {
+            "feature": "area_mean",
+            "correlation_with_target": 0.7089838365853902,
+            "absolute_correlation": 0.7089838365853902
+        },
+        {
+            "feature": "concavity_mean",
+            "correlation_with_target": 0.6963597071719052,
+            "absolute_correlation": 0.6963597071719052
+        },
+        {
+            "feature": "concavity_worst",
+            "correlation_with_target": 0.6596102103692332,
+            "absolute_correlation": 0.6596102103692332
+        }
+    ],
+    "top_features_by_mutual_information": [
+        {
+            "feature": "perimeter_worst",
+            "mutual_information": 0.4718422912925253
+        },
+        {
+            "feature": "area_worst",
+            "mutual_information": 0.46431328562695495
+        },
+        {
+            "feature": "radius_worst",
+            "mutual_information": 0.45123003298461906
+        },
+        {
+            "feature": "concave_points_mean",
+            "mutual_information": 0.43880644648738687
+        },
+        {
+            "feature": "concave_points_worst",
+            "mutual_information": 0.43625481544152267
+        },
+        {
+            "feature": "perimeter_mean",
+            "mutual_information": 0.402360812274962
+        },
+        {
+            "feature": "concavity_mean",
+            "mutual_information": 0.37544686818672335
+        },
+        {
+            "feature": "radius_mean",
+            "mutual_information": 0.3622757661688467
+        },
+        {
+            "feature": "area_mean",
+            "mutual_information": 0.36002335033029853
+        },
+        {
+            "feature": "area_se",
+            "mutual_information": 0.3407590537454477
+        }
+    ],
+    "top_features_by_class_mean_difference": [
+        {
+            "feature": "area_worst",
+            "absolute_difference": 863.3868809788066,
+            "relative_difference_percent": 154.47982580282775
+        },
+        {
+            "feature": "area_mean",
+            "absolute_difference": 515.5862190159082,
+            "relative_difference_percent": 111.40819822564461
+        },
+        {
+            "feature": "perimeter_worst",
+            "absolute_difference": 54.36439181332911,
+            "relative_difference_percent": 62.48354173113684
+        },
+        {
+            "feature": "area_se",
+            "absolute_difference": 51.537257200993594,
+            "relative_difference_percent": 243.84620387235398
+        },
+        {
+            "feature": "perimeter_mean",
+            "absolute_difference": 37.289971196025576,
+            "relative_difference_percent": 47.76148217331062
+        },
+        {
+            "feature": "radius_worst",
+            "absolute_difference": 7.755010200306538,
+            "relative_difference_percent": 57.96057901379905
+        },
+        {
+            "feature": "texture_worst",
+            "absolute_difference": 5.803137519158611,
+            "relative_difference_percent": 24.678376514490076
+        },
+        {
+            "feature": "radius_mean",
+            "absolute_difference": 5.316306379155435,
+            "relative_difference_percent": 43.7681303928869
+        },
+        {
+            "feature": "texture_mean",
+            "absolute_difference": 3.6901437556154555,
+            "relative_difference_percent": 20.598341050988697
+        },
+        {
+            "feature": "perimeter_se",
+            "absolute_difference": 2.3236079567676122,
+            "relative_difference_percent": 116.16173712234709
+        }
+    ],
+    "top_outlier_features": [
+        {
+            "feature": "area_se",
+            "outlier_count": 65,
+            "outlier_percentage": 11.4236
+        },
+        {
+            "feature": "radius_se",
+            "outlier_count": 38,
+            "outlier_percentage": 6.6784
+        },
+        {
+            "feature": "perimeter_se",
+            "outlier_count": 38,
+            "outlier_percentage": 6.6784
+        },
+        {
+            "feature": "area_worst",
+            "outlier_count": 35,
+            "outlier_percentage": 6.1511
+        },
+        {
+            "feature": "smoothness_se",
+            "outlier_count": 30,
+            "outlier_percentage": 5.2724
+        },
+        {
+            "feature": "fractal_dimension_se",
+            "outlier_count": 28,
+            "outlier_percentage": 4.9209
+        },
+        {
+            "feature": "compactness_se",
+            "outlier_count": 28,
+            "outlier_percentage": 4.9209
+        },
+        {
+            "feature": "symmetry_se",
+            "outlier_count": 27,
+            "outlier_percentage": 4.7452
+        },
+        {
+            "feature": "area_mean",
+            "outlier_count": 25,
+            "outlier_percentage": 4.3937
+        },
+        {
+            "feature": "fractal_dimension_worst",
+            "outlier_count": 24,
+            "outlier_percentage": 4.2179
+        }
+    ],
+    "high_skew_features": [
+        {
+            "feature": "area_se",
+            "skewness": 5.447186284898394,
+            "absolute_skewness": 5.447186284898394
+        },
+        {
+            "feature": "concavity_se",
+            "skewness": 5.110463049043661,
+            "absolute_skewness": 5.110463049043661
+        },
+        {
+            "feature": "fractal_dimension_se",
+            "skewness": 3.923968620227413,
+            "absolute_skewness": 3.923968620227413
+        },
+        {
+            "feature": "perimeter_se",
+            "skewness": 3.443615202194899,
+            "absolute_skewness": 3.443615202194899
+        },
+        {
+            "feature": "radius_se",
+            "skewness": 3.0886121663847574,
+            "absolute_skewness": 3.0886121663847574
+        },
+        {
+            "feature": "smoothness_se",
+            "skewness": 2.314450056636759,
+            "absolute_skewness": 2.314450056636759
+        },
+        {
+            "feature": "symmetry_se",
+            "skewness": 2.1951328995478216,
+            "absolute_skewness": 2.1951328995478216
+        },
+        {
+            "feature": "compactness_se",
+            "skewness": 1.9022207096378565,
+            "absolute_skewness": 1.9022207096378565
+        },
+        {
+            "feature": "area_worst",
+            "skewness": 1.8593732724433467,
+            "absolute_skewness": 1.8593732724433467
+        },
+        {
+            "feature": "fractal_dimension_worst",
+            "skewness": 1.6625792663955146,
+            "absolute_skewness": 1.6625792663955146
+        }
+    ],
+    "training_recommendations": [
+        "Use stratified train-validation splitting to preserve class balance.",
+        "Review top correlated and top MI features before feature selection decisions.",
+        "Consider robust scaling or model families less sensitive to outliers for high-outlier features.",
+        "Review skewed variables during training-time preprocessing rather than changing cleaned data.",
+        "Prioritize recall, threshold tuning, and calibration because false negatives are clinically risky."
+    ],
+    "artifacts": {
+        "eda_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\eda\\eda_summary.json",
+        "eda_report_txt": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\eda\\eda_report.txt",
+        "reports_eda_folder": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda",
+        "basic_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\basic_summary.json",
+        "statistical_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\statistical_summary.csv",
+        "target_distribution_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\target_distribution.png",
+        "correlation_heatmap_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\correlation_heatmap.png",
+        "correlation_matrix_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\correlation_matrix.csv",
+        "target_correlations_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\target_correlations.csv",
+        "mutual_information_scores_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\mutual_information_scores.csv",
+        "mutual_information_top15_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\mutual_information_top15.png",
+        "outlier_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\outlier_summary.csv",
+        "skewness_summary_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\skewness_summary.csv",
+        "classwise_mean_comparison_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\reports\\breast_cancer\\eda\\classwise_mean_comparison.csv"
+    }
+}

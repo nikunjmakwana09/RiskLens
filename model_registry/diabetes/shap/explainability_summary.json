@@ -1,0 +1,105 @@
+{
+    "dataset_name": "diabetes",
+    "analysis_type": "shap_explainability",
+    "model_name": "CalibratedExtraTrees",
+    "generated_at": "2026-04-03T16:58:27.193361Z",
+    "threshold": 0.3,
+    "explanation_sample_size": 116,
+    "feature_count": 14,
+    "top_global_features": [
+        {
+            "feature": "Glucose_BMI",
+            "mean_abs_shap": 0.04937781855473999,
+            "mean_shap": 0.0017016345645707012,
+            "impact_percent": 14.277
+        },
+        {
+            "feature": "Glucose_Age",
+            "mean_abs_shap": 0.047928524294361084,
+            "mean_shap": 0.002620628238902883,
+            "impact_percent": 13.8579
+        },
+        {
+            "feature": "High_Glucose",
+            "mean_abs_shap": 0.04711720533056724,
+            "mean_shap": 0.004661597145932398,
+            "impact_percent": 13.6234
+        },
+        {
+            "feature": "Glucose",
+            "mean_abs_shap": 0.03493810320704779,
+            "mean_shap": 0.007396350130382699,
+            "impact_percent": 10.1019
+        },
+        {
+            "feature": "BMI_Age",
+            "mean_abs_shap": 0.026695899986182003,
+            "mean_shap": -0.004034887382217839,
+            "impact_percent": 7.7188
+        },
+        {
+            "feature": "Obese",
+            "mean_abs_shap": 0.024288030505610316,
+            "mean_shap": -0.0022113836636713253,
+            "impact_percent": 7.0226
+        },
+        {
+            "feature": "DPF_Age_Interaction",
+            "mean_abs_shap": 0.02226457841080852,
+            "mean_shap": -0.0035115800083523486,
+            "impact_percent": 6.4375
+        },
+        {
+            "feature": "Metabolic_Load",
+            "mean_abs_shap": 0.02196906800665753,
+            "mean_shap": 0.002818660149544119,
+            "impact_percent": 6.3521
+        },
+        {
+            "feature": "Age",
+            "mean_abs_shap": 0.020401480736764115,
+            "mean_shap": -0.00083209308098469,
+            "impact_percent": 5.8988
+        },
+        {
+            "feature": "Glucose_Insulin_Product",
+            "mean_abs_shap": 0.017663750067576773,
+            "mean_shap": 0.00215218156935672,
+            "impact_percent": 5.1073
+        },
+        {
+            "feature": "BMI",
+            "mean_abs_shap": 0.013870315185992809,
+            "mean_shap": -0.003993571921954406,
+            "impact_percent": 4.0104
+        },
+        {
+            "feature": "Insulin",
+            "mean_abs_shap": 0.008355377919605562,
+            "mean_shap": 0.000609277482028843,
+            "impact_percent": 2.4159
+        },
+        {
+            "feature": "SkinThickness",
+            "mean_abs_shap": 0.006150714699298238,
+            "mean_shap": 0.000688532999480662,
+            "impact_percent": 1.7784
+        },
+        {
+            "feature": "Very_High_Glucose",
+            "mean_abs_shap": 0.004835233984619346,
+            "mean_shap": 0.0013715821124097806,
+            "impact_percent": 1.398
+        }
+    ],
+    "local_explanations_file": "local_explanations.json",
+    "global_feature_impact_file": "global_feature_impact.csv",
+    "plots": {
+        "shap_summary": "shap_summary.png",
+        "shap_bar": "shap_bar.png"
+    },
+    "notes": {
+        "interpretation": "Positive SHAP values push prediction toward diabetic class, while negative SHAP values push prediction toward non-diabetic class.",
+        "clinical_warning": "These explanations support transparency but must not be used as standalone medical evidence."
+    }
+}

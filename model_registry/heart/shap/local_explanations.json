@@ -1,0 +1,394 @@
+{
+    "dataset_name": "heart",
+    "generated_at": "2026-04-03T14:56:21.793636Z",
+    "threshold": 0.38,
+    "explained_sample_count": 5,
+    "top_features_per_sample": 10,
+    "samples": [
+        {
+            "sample_index": 112,
+            "predicted_probability": 0.24954577986619392,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "ca_0",
+                    "feature_value": 1.0,
+                    "shap_value": -0.09949731544734386,
+                    "abs_shap_value": 0.09949731544734386,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "oldpeak_thalach_ratio",
+                    "feature_value": -0.8693991279496116,
+                    "shap_value": -0.09806998608294921,
+                    "abs_shap_value": 0.09806998608294921,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "trestbps",
+                    "feature_value": 2.8143269049187367,
+                    "shap_value": 0.09196968799060323,
+                    "abs_shap_value": 0.09196968799060323,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "cp_0",
+                    "feature_value": 1.0,
+                    "shap_value": 0.09076137141238402,
+                    "abs_shap_value": 0.09076137141238402,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "sex_0",
+                    "feature_value": 1.0,
+                    "shap_value": -0.07085529275079508,
+                    "abs_shap_value": 0.07085529275079508,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "sex_1",
+                    "feature_value": 0.0,
+                    "shap_value": -0.060143001465554534,
+                    "abs_shap_value": 0.060143001465554534,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_2",
+                    "feature_value": 1.0,
+                    "shap_value": -0.052562571857694126,
+                    "abs_shap_value": 0.052562571857694126,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_1",
+                    "feature_value": 0.0,
+                    "shap_value": -0.04848815238025368,
+                    "abs_shap_value": 0.04848815238025368,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.04176377282669484,
+                    "abs_shap_value": 0.04176377282669484,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_3",
+                    "feature_value": 0.0,
+                    "shap_value": -0.04031657838158749,
+                    "abs_shap_value": 0.04031657838158749,
+                    "direction": "decrease_heart_disease_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 31,
+            "predicted_probability": 0.9909979352218329,
+            "predicted_class": 1,
+            "top_feature_contributions": [
+                {
+                    "feature": "oldpeak_thalach_ratio",
+                    "feature_value": 1.9858302439463293,
+                    "shap_value": 0.1681602403904683,
+                    "abs_shap_value": 0.1681602403904683,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "ca_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.08246399456043843,
+                    "abs_shap_value": 0.08246399456043843,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "age_thalach_ratio",
+                    "feature_value": 2.2119843720021777,
+                    "shap_value": 0.0779443221238848,
+                    "abs_shap_value": 0.0779443221238848,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "cp_0",
+                    "feature_value": 0.0,
+                    "shap_value": -0.04613365527884433,
+                    "abs_shap_value": 0.04613365527884433,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_3",
+                    "feature_value": 1.0,
+                    "shap_value": 0.03798871722172113,
+                    "abs_shap_value": 0.03798871722172113,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "ca_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.035158666483220254,
+                    "abs_shap_value": 0.035158666483220254,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "thalach",
+                    "feature_value": -1.6644808406042433,
+                    "shap_value": -0.032554953148477714,
+                    "abs_shap_value": 0.032554953148477714,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_2",
+                    "feature_value": 0.0,
+                    "shap_value": 0.03220780586407495,
+                    "abs_shap_value": 0.03220780586407495,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.031456528060487154,
+                    "abs_shap_value": 0.031456528060487154,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "trestbps",
+                    "feature_value": 1.6570747999002629,
+                    "shap_value": 0.027624228599497008,
+                    "abs_shap_value": 0.027624228599497008,
+                    "direction": "increase_heart_disease_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 185,
+            "predicted_probability": 0.792683990942109,
+            "predicted_class": 1,
+            "top_feature_contributions": [
+                {
+                    "feature": "oldpeak_thalach_ratio",
+                    "feature_value": 1.4386294280660419,
+                    "shap_value": 0.2236317620859524,
+                    "abs_shap_value": 0.2236317620859524,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "cp_0",
+                    "feature_value": 0.0,
+                    "shap_value": -0.09094952185798573,
+                    "abs_shap_value": 0.09094952185798573,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_3",
+                    "feature_value": 1.0,
+                    "shap_value": 0.06793293449375501,
+                    "abs_shap_value": 0.06793293449375501,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "age_thalach_ratio",
+                    "feature_value": -1.6352020400513299,
+                    "shap_value": -0.066843878967291,
+                    "abs_shap_value": 0.066843878967291,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "ca_0",
+                    "feature_value": 1.0,
+                    "shap_value": -0.06668221978366272,
+                    "abs_shap_value": 0.06668221978366272,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_2",
+                    "feature_value": 0.0,
+                    "shap_value": 0.048066885732245934,
+                    "abs_shap_value": 0.048066885732245934,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.046621803850490154,
+                    "abs_shap_value": 0.046621803850490154,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.04403305058648097,
+                    "abs_shap_value": 0.04403305058648097,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.041708258791735064,
+                    "abs_shap_value": 0.041708258791735064,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_2",
+                    "feature_value": 0.0,
+                    "shap_value": 0.038440511091684934,
+                    "abs_shap_value": 0.038440511091684934,
+                    "direction": "increase_heart_disease_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 230,
+            "predicted_probability": 0.2954240446186415,
+            "predicted_class": 0,
+            "top_feature_contributions": [
+                {
+                    "feature": "oldpeak_thalach_ratio",
+                    "feature_value": -0.8693991279496116,
+                    "shap_value": -0.10035544103104037,
+                    "abs_shap_value": 0.10035544103104037,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "ca_0",
+                    "feature_value": 1.0,
+                    "shap_value": -0.10032807670465896,
+                    "abs_shap_value": 0.10032807670465896,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "cp_0",
+                    "feature_value": 1.0,
+                    "shap_value": 0.09670704119027494,
+                    "abs_shap_value": 0.09670704119027494,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "sex_0",
+                    "feature_value": 1.0,
+                    "shap_value": -0.06991495428403208,
+                    "abs_shap_value": 0.06991495428403208,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "sex_1",
+                    "feature_value": 0.0,
+                    "shap_value": -0.06417657215015976,
+                    "abs_shap_value": 0.06417657215015976,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.04501898269555812,
+                    "abs_shap_value": 0.04501898269555812,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.04397432546181489,
+                    "abs_shap_value": 0.04397432546181489,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_3",
+                    "feature_value": 0.0,
+                    "shap_value": -0.041556665025604664,
+                    "abs_shap_value": 0.041556665025604664,
+                    "direction": "decrease_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_2",
+                    "feature_value": 0.0,
+                    "shap_value": 0.03976378502408984,
+                    "abs_shap_value": 0.03976378502408984,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.03833028808109112,
+                    "abs_shap_value": 0.03833028808109112,
+                    "direction": "increase_heart_disease_risk"
+                }
+            ]
+        },
+        {
+            "sample_index": 172,
+            "predicted_probability": 0.992706107417069,
+            "predicted_class": 1,
+            "top_feature_contributions": [
+                {
+                    "feature": "oldpeak_thalach_ratio",
+                    "feature_value": 1.3268716919946626,
+                    "shap_value": 0.11567500014354007,
+                    "abs_shap_value": 0.11567500014354007,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "ca_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.0923966129920268,
+                    "abs_shap_value": 0.0923966129920268,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "cp_0",
+                    "feature_value": 1.0,
+                    "shap_value": 0.07291938879272646,
+                    "abs_shap_value": 0.07291938879272646,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_3",
+                    "feature_value": 1.0,
+                    "shap_value": 0.03758492655149224,
+                    "abs_shap_value": 0.03758492655149224,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "ca_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.0352951155597721,
+                    "abs_shap_value": 0.0352951155597721,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "thal_2",
+                    "feature_value": 0.0,
+                    "shap_value": 0.03166213689388614,
+                    "abs_shap_value": 0.03166213689388614,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_0",
+                    "feature_value": 0.0,
+                    "shap_value": 0.028806816552298713,
+                    "abs_shap_value": 0.028806816552298713,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "exang_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.024078202327488744,
+                    "abs_shap_value": 0.024078202327488744,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_1",
+                    "feature_value": 1.0,
+                    "shap_value": 0.02405947680368385,
+                    "abs_shap_value": 0.02405947680368385,
+                    "direction": "increase_heart_disease_risk"
+                },
+                {
+                    "feature": "slope_2",
+                    "feature_value": 0.0,
+                    "shap_value": 0.02388903053615645,
+                    "abs_shap_value": 0.02388903053615645,
+                    "direction": "increase_heart_disease_risk"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "dataset_name": "heart",
+    "generated_at": "2026-04-03T14:54:54.559833Z",
+    "input_dataset_shape": {
+        "rows": 302,
+        "features": 17
+    },
+    "split_summary": {
+        "train_shape": {
+            "rows": 210,
+            "features": 17
+        },
+        "validation_shape": {
+            "rows": 46,
+            "features": 17
+        },
+        "test_shape": {
+            "rows": 46,
+            "features": 17
+        }
+    },
+    "target_distribution": {
+        "0": 164,
+        "1": 138
+    },
+    "best_cv_model": {
+        "model": "LogisticRegression",
+        "cv_accuracy_mean": 0.8523809523809524,
+        "cv_precision_mean": 0.845513784461153,
+        "cv_recall_mean": 0.8331578947368421,
+        "cv_f1_mean": 0.8366895718492791,
+        "cv_roc_auc_mean": 0.917277928021635,
+        "cv_pr_auc_mean": 0.9223917850197673,
+        "cv_balanced_accuracy_mean": 0.8505710422300812,
+        "composite_score": 0.8757330986521645
+    },
+    "final_selected_model": "LogisticRegression",
+    "decision_threshold": 0.38
+}

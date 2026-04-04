@@ -1,0 +1,111 @@
+{
+    "dataset_name": "heart",
+    "analysis_type": "shap_explainability",
+    "model_name": "CalibratedLogisticRegression",
+    "generated_at": "2026-04-03T14:56:21.797414Z",
+    "threshold": 0.38,
+    "explanation_sample_size": 46,
+    "feature_count": 23,
+    "top_global_features": [
+        {
+            "feature": "cp_0",
+            "mean_abs_shap": 0.09688666849434195,
+            "mean_shap": 0.0005842316379405428,
+            "impact_percent": 13.7229
+        },
+        {
+            "feature": "ca_0",
+            "mean_abs_shap": 0.09183632544704201,
+            "mean_shap": -0.006104636698938401,
+            "impact_percent": 13.0076
+        },
+        {
+            "feature": "oldpeak_thalach_ratio",
+            "mean_abs_shap": 0.0876172481776894,
+            "mean_shap": 0.0196369975916644,
+            "impact_percent": 12.41
+        },
+        {
+            "feature": "slope_1",
+            "mean_abs_shap": 0.03954184704857056,
+            "mean_shap": -0.0017435121650846424,
+            "impact_percent": 5.6007
+        },
+        {
+            "feature": "thal_3",
+            "mean_abs_shap": 0.03948454524751947,
+            "mean_shap": -0.003968771433542592,
+            "impact_percent": 5.5925
+        },
+        {
+            "feature": "age_thalach_ratio",
+            "mean_abs_shap": 0.03897197612408541,
+            "mean_shap": 0.01156332448940523,
+            "impact_percent": 5.5199
+        },
+        {
+            "feature": "slope_2",
+            "mean_abs_shap": 0.03888569569382725,
+            "mean_shap": 0.0007511977881584927,
+            "impact_percent": 5.5077
+        },
+        {
+            "feature": "thal_2",
+            "mean_abs_shap": 0.03612213833747279,
+            "mean_shap": -0.00011627578940220031,
+            "impact_percent": 5.1163
+        },
+        {
+            "feature": "sex_0",
+            "mean_abs_shap": 0.03238925450363694,
+            "mean_shap": -0.006764255304972759,
+            "impact_percent": 4.5876
+        },
+        {
+            "feature": "sex_1",
+            "mean_abs_shap": 0.028860454283078523,
+            "mean_shap": -0.006161497285439992,
+            "impact_percent": 4.0878
+        },
+        {
+            "feature": "exang_0",
+            "mean_abs_shap": 0.027826390947253584,
+            "mean_shap": 0.0032501856798145515,
+            "impact_percent": 3.9413
+        },
+        {
+            "feature": "trestbps",
+            "mean_abs_shap": 0.02503703078964202,
+            "mean_shap": 0.005196472303408911,
+            "impact_percent": 3.5462
+        },
+        {
+            "feature": "exang_1",
+            "mean_abs_shap": 0.024208161918180426,
+            "mean_shap": 0.003284554221239605,
+            "impact_percent": 3.4288
+        },
+        {
+            "feature": "ca_1",
+            "mean_abs_shap": 0.02133533018231915,
+            "mean_shap": 0.0016096449645281537,
+            "impact_percent": 3.0219
+        },
+        {
+            "feature": "thalach",
+            "mean_abs_shap": 0.02083216104618057,
+            "mean_shap": -0.006173062136174976,
+            "impact_percent": 2.9506
+        }
+    ],
+    "local_explanations_file": "local_explanations.json",
+    "global_feature_impact_file": "global_feature_impact.csv",
+    "plots": {
+        "shap_summary": "shap_summary.png",
+        "shap_bar": "shap_bar.png"
+    },
+    "notes": {
+        "interpretation": "Positive SHAP values push prediction toward heart disease class, while negative SHAP values push prediction toward no-disease class.",
+        "clinical_warning": "These explanations improve transparency but must not be used as standalone medical evidence."
+    }
+}

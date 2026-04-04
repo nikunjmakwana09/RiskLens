@@ -1,0 +1,5 @@
+{
+    "dataset_name": "breast_cancer",
+    "threshold": 0.19999999999999996,
+    "threshold_selection_strategy": "max(0.45*f1 + 0.30*recall + 0.15*balanced_accuracy + 0.10*precision) on validation set"
+}

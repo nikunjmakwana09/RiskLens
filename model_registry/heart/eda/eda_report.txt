@@ -1,0 +1,58 @@
+HEART DISEASE - EXPLORATORY DATA ANALYSIS INSIGHT REPORT
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Dataset Name              : heart
+Generated At              : 2026-04-03T14:54:25.362470Z
+Total Rows                : 302
+Total Columns             : 14
+Feature Count             : 13
+Numeric Features          : 13
+Categorical Features      : 8
+Duplicate Rows            : 0
+Missing Values Total      : 0
+
+2. TARGET DISTRIBUTION
+--------------------------------------------------------------------------------
+No Disease (0) Count      : 138
+Disease (1) Count         : 164
+No Disease (0) Rate       : 45.70%
+Disease (1) Rate          : 54.30%
+Class Balance Status      : reasonably_balanced
+
+3. STRONGEST PREDICTIVE SIGNALS
+--------------------------------------------------------------------------------
+Top 5 Features by Absolute Correlation with Target:
+exang, cp, oldpeak, thalach, ca
+
+Top 5 Features by Mutual Information:
+thal, cp, ca, exang, chol
+
+Top 5 Features by Class-wise Mean Difference:
+thalach, chol, trestbps, age, oldpeak
+
+4. DISTRIBUTION HEALTH
+--------------------------------------------------------------------------------
+Top 5 Features with Most Outliers:
+trestbps, oldpeak, chol, thalach
+
+Highly Skewed Features (|skew| > 1):
+oldpeak, chol
+
+5. CLINICAL / MODELING INTERPRETATION
+--------------------------------------------------------------------------------
+Cardiac variables such as chest pain type, major vessel count, thal, exercise-induced angina, oldpeak, and maximum heart rate can carry strong diagnostic signal.
+Because missed heart disease cases are clinically costly, recall, calibration, and threshold tuning should be prioritized.
+Encoded categorical/ordinal features should be interpreted carefully during modeling and explainability.
+
+6. TRAINING RECOMMENDATIONS
+--------------------------------------------------------------------------------
+Use stratified splitting for train/validation/test partitions.
+Review multicollinearity and strong signal features before feature selection.
+Evaluate ROC-AUC, PR-AUC, recall, specificity, calibration, and threshold sensitivity.
+Consider both linear and tree-based models, with careful preprocessing alignment.
+
+7. GOVERNANCE NOTE
+--------------------------------------------------------------------------------
+This EDA report is generated for project auditability, model registry traceability, and downstream training alignment.

@@ -1,0 +1,38 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:38:42.474305Z",
+    "threshold": 0.19999999999999996,
+    "confusion_matrix": {
+        "tn": 52,
+        "fp": 2,
+        "fn": 0,
+        "tp": 32
+    },
+    "error_counts": {
+        "total_errors": 2,
+        "false_positives": 2,
+        "false_negatives": 0
+    },
+    "false_positive_probability_summary": {
+        "count": 2,
+        "mean": 0.31828835658652466,
+        "max": 0.4348325032520993
+    },
+    "false_negative_probability_summary": {
+        "count": 0,
+        "mean": null,
+        "min": null
+    },
+    "hardest_false_positives_top10": [
+        {
+            "test_index": 30,
+            "predicted_probability": 0.4348325032520993
+        },
+        {
+            "test_index": 76,
+            "predicted_probability": 0.20174420992094996
+        }
+    ],
+    "hardest_false_negatives_top10": [],
+    "clinical_risk_note": "False negatives are especially important in breast cancer screening because missed malignant cases carry higher clinical risk."
+}

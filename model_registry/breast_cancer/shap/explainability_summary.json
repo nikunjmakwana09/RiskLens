@@ -1,0 +1,126 @@
+{
+    "dataset_name": "breast_cancer",
+    "generated_at": "2026-04-03T14:43:26.004910Z",
+    "analysis_type": "shap_explainability",
+    "target_column": "target",
+    "threshold": 0.19999999999999996,
+    "background_sample_size": 80,
+    "explanation_sample_size": 80,
+    "top_n_features_visualized": 20,
+    "global_feature_count": 20,
+    "selected_feature_count": 20,
+    "model_name": "CalibratedExtraTrees",
+    "top_global_features": [
+        {
+            "feature": "perimeter_worst",
+            "mean_abs_shap": 0.04321177859848213,
+            "mean_shap": 0.006242746507457341
+        },
+        {
+            "feature": "radius_worst",
+            "mean_abs_shap": 0.040798949100410986,
+            "mean_shap": 0.00628735751205192
+        },
+        {
+            "feature": "area_worst",
+            "mean_abs_shap": 0.039205636571391436,
+            "mean_shap": 0.005780457578615067
+        },
+        {
+            "feature": "concave_points_worst",
+            "mean_abs_shap": 0.03813116808104201,
+            "mean_shap": 0.006479439684314652
+        },
+        {
+            "feature": "concave_points_mean",
+            "mean_abs_shap": 0.028957736804210182,
+            "mean_shap": 0.005871510565886993
+        },
+        {
+            "feature": "area_worst_to_mean",
+            "mean_abs_shap": 0.02570689533306052,
+            "mean_shap": 0.001479383093718983
+        },
+        {
+            "feature": "radius_worst_to_mean",
+            "mean_abs_shap": 0.024600595757445824,
+            "mean_shap": 0.0014336713423373098
+        },
+        {
+            "feature": "area_radius_ratio_mean",
+            "mean_abs_shap": 0.019877035313558174,
+            "mean_shap": 0.002569065815116952
+        },
+        {
+            "feature": "concavity_worst",
+            "mean_abs_shap": 0.01971957228035389,
+            "mean_shap": 0.0030167576512385988
+        },
+        {
+            "feature": "perimeter_mean",
+            "mean_abs_shap": 0.018272559914149323,
+            "mean_shap": 0.0030188356222540648
+        },
+        {
+            "feature": "area_se",
+            "mean_abs_shap": 0.01796108564236398,
+            "mean_shap": 0.0025825569305304536
+        },
+        {
+            "feature": "area_mean",
+            "mean_abs_shap": 0.01769400569491616,
+            "mean_shap": 0.0023274828869711316
+        },
+        {
+            "feature": "radius_mean",
+            "mean_abs_shap": 0.01672794088046852,
+            "mean_shap": 0.002354275818826557
+        },
+        {
+            "feature": "concavity_mean",
+            "mean_abs_shap": 0.01514017817466864,
+            "mean_shap": 0.0027212417052755724
+        },
+        {
+            "feature": "compactness_worst",
+            "mean_abs_shap": 0.010802183499602044,
+            "mean_shap": 0.0009387502796977726
+        },
+        {
+            "feature": "radius_se",
+            "mean_abs_shap": 0.008999675546884914,
+            "mean_shap": 0.0005183405697072403
+        },
+        {
+            "feature": "compactness_concavity_interaction",
+            "mean_abs_shap": 0.008812084893518818,
+            "mean_shap": 0.0012088816210585637
+        },
+        {
+            "feature": "radius_perimeter_ratio_mean",
+            "mean_abs_shap": 0.008432499215330081,
+            "mean_shap": 0.0012541695088783542
+        },
+        {
+            "feature": "perimeter_se",
+            "mean_abs_shap": 0.006018587808663043,
+            "mean_shap": 1.4333487249195787e-05
+        },
+        {
+            "feature": "compactness_mean",
+            "mean_abs_shap": 0.0043352567744312995,
+            "mean_shap": 0.0014216429285429735
+        }
+    ],
+    "artifacts": {
+        "shap_summary_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\shap\\shap_summary.png",
+        "shap_bar_png": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\shap\\shap_bar.png",
+        "global_feature_impact_csv": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\shap\\global_feature_impact.csv",
+        "local_explanations_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\shap\\local_explanations.json",
+        "explainability_summary_json": "c:\\Users\\nikun\\Desktop\\RiskLens\\model_registry\\breast_cancer\\shap\\explainability_summary.json"
+    },
+    "notes": {
+        "interpretation": "Positive SHAP values push prediction toward malignant class, while negative SHAP values push toward benign class.",
+        "clinical_warning": "These explanations improve transparency but must not be treated as standalone clinical evidence."
+    }
+}
