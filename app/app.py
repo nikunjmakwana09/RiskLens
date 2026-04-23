@@ -1,6 +1,12 @@
 import streamlit as st
 import sys
 import os
+import requests
+
+try:
+    requests.get("https://risklens-8axc.onrender.com/health", timeout=10)
+except:
+    pass
 
 # -----------------------------
 # LOAD PREDICTOR
@@ -351,8 +357,51 @@ else:
 # PREDICT
 # -----------------------------
 if st.button("🚀 Analyze Risk"):
-    with st.spinner("🧠 Analyzing clinical data..."):
+
+    API_URL = "https://risklens-8axc.onrender.com/predict"
+
+    try:
+        with st.spinner("Connecting to AI prediction service..."):
+
+            response = requests.post(
+                API_URL,
+                json={
+                    "disease": disease,
+                    "payload": payload
+                },
+                headers={
+                    "Content-Type": "application/json",
+                    "x-api-key": "health-ai-secure-2026"
+                },
+                timeout=10
+            )
+
+        if not response.ok:
+            st.warning(f"⚠ API error ({response.status_code}). Using backup model.")
+            result = predictor.predict(disease, payload)
+
+        else:
+            try:
+                result = response.json()
+            except ValueError:
+                st.error("⚠ Invalid JSON from API. Switching to backup.")
+                result = predictor.predict(disease, payload)
+
+    except requests.exceptions.Timeout:
+        st.warning("⚠ API timeout. Using local model.")
         result = predictor.predict(disease, payload)
+
+    except requests.exceptions.ConnectionError:
+        st.warning("⚠ API connection error. Using local model.")
+        result = predictor.predict(disease, payload)
+
+    except Exception as e:
+        st.warning(f"⚠ Unexpected error: {e}")
+        result = predictor.predict(disease, payload)
+
+    if result.get("status") == "error":
+        st.error(result["message"])
+        st.stop()
 
     if result["status"] == "success":
 
